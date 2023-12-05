@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_background"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlaLayoutOtherChks"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/banner_clamping"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/lblheaderOtherChecks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/header_otherChecks_Eng"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llleftpanel"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlaLayoutOtherChks"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical" >
+
+      <!--       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblotherchecksupplyofbush"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/title_otherSupplyOf_Bush_Eng"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+        </LinearLayout> -->
+        <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" 
+                android:paddingBottom="5dp"></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblotherChecksRubberCap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_otherChecks_RubberCap_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblOtherChecksBrassBall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_otherChecks_BrassBall_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblOtherChecksBrassBallCock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_otherChecks_BrassBallCock_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblOtherChecksIsolationBallValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/title_otherSupplyOf_Bush_Eng"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+        </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblOtherCheckIsMeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                     android:layout_marginTop="5dp"
+                    android:text="@string/title_otherChecks_IsMeter_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:id="@+id/llmeterReading"
+                 android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblOtherCheckMeterReading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/title_otherChecks_MeterReading_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblOtherChecksMeterPerformance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                     android:layout_marginTop="5dp"
+                    android:text="@string/title_otherChecks_MeterPerformance_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblOtherChecksMeterReadable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                     android:layout_marginTop="5dp"
+                    android:text="@string/title_otherChecks_MeterReadable_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblOtherChecksGiPipeInsideBasement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_otherChecks_GiPipeInsideBasement_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblOtherChecksIsInstallationPVCSleeve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                 android:layout_marginTop="5dp"
+                android:text="@string/title_otherInstallation_PVCSleev_Eng"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivmiddlepanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llleftpanel"
+            android:layout_below="@+id/rlaLayoutOtherChks"
+            android:layout_toRightOf="@+id/llleftpanel"
+            android:background="@drawable/table_partition_vertical" />
+
+        <LinearLayout
+            android:id="@+id/llrightpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlaLayoutOtherChks"
+            android:layout_toRightOf="@+id/ivmiddlepanel"
+            android:orientation="vertical" >
+
+ <!--        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edtotherCheckssupplybush"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textbox"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="2dp"
+                android:paddingRight="27dp" >
+            </EditText>
+            
+              <TextView
+                android:id="@+id/errOtherCheckssupplybush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:maxLines="2"
+                android:text="value should be less than 16."
+                android:textColor="@color/form_blue"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </LinearLayout> -->
+        <RelativeLayout android:layout_width="wrap_content"
+                         android:layout_height="42dp"
+                         android:background="@drawable/table_partition_horizontal"
+		                android:paddingRight="10dp"
+		                android:paddingTop="4dp" >
+                
+                         <TextView android:id="@+id/txtVendorSupplied" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:textColor="@color/black"
+                			 android:textSize="8sp"
+                			 android:layout_marginLeft="10dp"
+                			 android:gravity="center"
+                			 android:text="Vendor\nSupplied"/>
+                         
+                         <TextView android:id="@+id/txtCompanySupplied" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtVendorSupplied"
+                             android:textColor="@color/black"
+                			 android:textSize="8sp"
+                			 android:layout_marginLeft="10dp"
+                			 android:gravity="center"
+                			 android:text="Company\nSupplied"/>
+
+                         <TextView android:id="@+id/txtNoChargableQty" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtCompanySupplied"
+                             android:textColor="@color/black"
+                			 android:textSize="8sp"
+                			 android:layout_marginLeft="10dp"
+                			 android:gravity="left"
+                			 android:text="Non Chargeble\nQuantity"/>
+                         
+                         <TextView android:id="@+id/txtChargableQty" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtNoChargableQty"
+                             android:textColor="@color/black"
+                			 android:textSize="8sp"
+                			 android:layout_marginLeft="10dp"
+                			 android:gravity="left"
+                			 android:text="Chargeble\nQuantity"/>
+                     </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <RadioGroup
+		                      android:id="@+id/radGroupOtherChecksRubberCap"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                      <RadioButton
+		                          android:id="@+id/stubeOtherChecksRubberCapByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                          android:layout_marginRight="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+		                      
+		                      <RadioButton
+		                          android:id="@+id/stubeOtherChecksRubberCapByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+		                  </RadioGroup> 
+		                  
+		                <EditText
+		                    android:id="@+id/edtotherChecksRubberCap"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:layout_toRightOf="@+id/radGroupOtherChecksRubberCap"
+		                    android:layout_marginLeft="30dp"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp" />
+		                
+		                
+		                 <EditText
+		                    android:id="@+id/edtotherChecksRubberCapChargable"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                     android:layout_toRightOf="@id/edtotherChecksRubberCap"
+		                     android:layout_marginLeft="10dp"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"/>
+		                 
+		                
+                    <TextView
+                        android:id="@+id/errOtherChecksRubberCap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/edtotherChecksRubberCapChargable"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <RadioGroup
+		                      android:id="@+id/radGroupOtherChecksBrassBall"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+                    		 <RadioButton
+		                          android:id="@+id/stubeOtherChecksBrassBallByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                           android:layout_marginRight="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+		                      
+		                      <RadioButton
+		                          android:id="@+id/stubeOtherChecksBrassBallByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+
+		                      
+		                  </RadioGroup> 
+		                  
+		                <EditText
+		                    android:id="@+id/edtOtherChecksBrassBall"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:layout_toRightOf="@+id/radGroupOtherChecksBrassBall"
+		                    android:layout_marginLeft="30dp"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp" />
+		                
+		                
+		                 <EditText
+		                    android:id="@+id/edtotherChecksBrassBallChargable"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                     android:layout_toRightOf="@id/edtOtherChecksBrassBall"
+		                     android:layout_marginLeft="10dp"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp" />
+		                 
+		                
+                    <TextView
+                        android:id="@+id/errOtherChecksBrassBall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/edtotherChecksBrassBallChargable"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+            </RelativeLayout>
+
+           <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <RadioGroup
+		                      android:id="@+id/radGroupOtherChecksBrassBallCock"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                      <RadioButton
+		                          android:id="@+id/stubeOtherChecksBrassBallCockByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                          android:layout_marginRight="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+		                      
+		                      <RadioButton
+		                          android:id="@+id/stubeOtherChecksBrassBallCockByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+		                  </RadioGroup> 
+		                  
+		                <EditText
+		                    android:id="@+id/edtOtherChecksBrassBallCock"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:layout_toRightOf="@+id/radGroupOtherChecksBrassBallCock"
+		                    android:layout_marginLeft="30dp"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp" />
+		                
+		                
+		                 <EditText
+		                    android:id="@+id/edtotherChecksBrassBallCockChargable"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                     android:layout_toRightOf="@id/edtOtherChecksBrassBallCock"
+		                     android:layout_marginLeft="10dp"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"/>
+		                 
+		                
+                    <TextView
+                        android:id="@+id/errOtherChecksBrassBallCock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/edtotherChecksBrassBallCockChargable"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+            </RelativeLayout>
+
+           <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <RadioGroup
+		                      android:id="@+id/radGroupOtherChecksIsolationBallValue"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+                             <RadioButton
+		                          android:id="@+id/splrSupply3by4into1by2BushByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                          android:layout_marginRight="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+		                      
+		                      <RadioButton
+		                          android:id="@+id/splrSupply3by4into1by2BushByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="5dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+
+
+		                  </RadioGroup> 
+		                  
+		                <EditText
+		                    android:id="@+id/edtotherCheckssupplybush"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:layout_toRightOf="@+id/radGroupOtherChecksIsolationBallValue"
+		                    android:layout_marginLeft="30dp"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" />
+		                
+		                
+		                 <EditText
+		                    android:id="@+id/edtotherCheckssupplybushChargable"
+		                    android:layout_width="30dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                     android:layout_toRightOf="@id/edtotherCheckssupplybush"
+		                     android:layout_marginLeft="10dp"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionDone"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" />
+		                 
+		                
+                    <TextView
+                        android:id="@+id/errOtherChecksIsolationBallValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@+id/edtotherCheckssupplybushChargable"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                android:id="@+id/btnIsMeterOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textbox_scrolldown"
+                android:paddingLeft="2dp"
+                android:paddingRight="30dp"
+                android:visibility="gone" />
+                
+                <RadioGroup
+                    android:id="@+id/radGroupOtherChecksIsMeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnIsMeterOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_ok"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radBtnIsMeterNotOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_notok"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" >
+                    </RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" 
+                android:id="@+id/llmeterReadingDetail"
+                android:visibility ="gone">
+
+                <EditText
+                    android:id="@+id/edtOtherChecksMeterReading"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:paddingLeft="2dp" >
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btnOtherChecksMeterPerformance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="30dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupOtherChecksMeterPerformance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnOtherChecksMeterPerformance"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_ok"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radBtnNotOk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_notok"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errOthersMtrPrformc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupOtherChecksMeterPerformance"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btnOtherChecksMeterReadable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="30dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupOtherChecksMeterReadable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnOtherChecksMeterReadable"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_yes"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtnNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_no"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errOthersMtrRdable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupOtherChecksMeterReadable"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btnOtherChecksGiPipeInsideBasement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="30dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupOtherChecksGiPipeInsideBasement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnOtherChecksGiPipeInsideBasement"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnYesInBM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_yes"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" />
+
+                    <RadioButton
+                        android:id="@+id/radBtnNoInBM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_no"
+                        android:textColor="@color/black"
+                        android:textSize="8sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errOthersPipeInside"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupOtherChecksGiPipeInsideBasement"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/btnOtherChecksIsInstallationPVCSleeve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textbox_scrolldown"
+                android:paddingLeft="2dp"
+                android:paddingRight="30dp"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radGroupOtherChecksIsInstallationPVCSleeve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnOtherChecksIsInstallationPVCSleeve"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radBtnYesInPVSSleeve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lable_yes"
+                    android:textSize="8sp"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radBtnNoInPVCSleeve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lable_no"
+                    android:textSize="8sp"
+                    android:textColor="@color/black" >
+                </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/errOthersIsInstallationPVCSleeve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/radGroupOtherChecksIsInstallationPVCSleeve"
+                android:maxLines="2"
+                android:textColor="@color/red"
+                android:textSize="11sp" />
+        </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lerBottomPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/llrightpanel"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnOtherChecksSaveandNext"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/save_next_button"
+                android:text="Next" />
+
+            <Button
+                android:id="@+id/btnOtherChecksPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/btnOtherChecksSaveandNext"
+                android:background="@drawable/save_next_button"
+                android:text="Previous" />
+
+            <TextView
+                android:id="@+id/errmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnOtherChecksPrev"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:paddingLeft="10dp"
+                android:text="@string/errro_manditory_message_Eng"
+                android:textColor="@color/red"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

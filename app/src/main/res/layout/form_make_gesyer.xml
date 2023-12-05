@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/lnrLayoutMakeGeyserMake"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblMakeGeyserMake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_Make_Geyser_Eng"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llleftpanel"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lnrLayoutMakeGeyserMake"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblmake_Geyser_isGeyserAvailable"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:text="@string/title_make_Geyser_IsGeyserAvailable_Eng"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llgeyser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblMake_geyser_Make"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="@string/title_make_geyser_Make_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblmake_Geyser_GeyserType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="@string/title_make_Geyser_GeyserType_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblmake_Geyser_GeyserInsideBathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:text="@string/title_make_Geyser_GeyserInsideBathroom_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivmiddlepanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llleftpanel"
+        android:layout_below="@+id/lnrLayoutMakeGeyserMake"
+        android:layout_toRightOf="@+id/llleftpanel"
+        android:background="@drawable/table_partition_vertical" />
+
+    <LinearLayout
+        android:id="@+id/llrightpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnrLayoutMakeGeyserMake"
+        android:layout_toRightOf="@+id/ivmiddlepanel"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <RadioGroup
+                android:id="@+id/radGroupMGeyserIsGeyserAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radBtnGeyserAvailableYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lable_yes"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radBtnGeyserAvailableNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lable_no"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/errIsGeyser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/radGroupMGeyserIsGeyserAvailable"
+                android:maxLines="2"
+                android:textColor="@color/red"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llgeyserDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btnMake_geyser_Make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupMake_geyser_Make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnMake_geyser_Make"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/edtMGOthers"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="28dp"
+                    android:layout_toRightOf="@+id/errMGOthers"
+                    scrollHorizontally="true"
+                    android:background="@drawable/textbox"
+                    android:maxLength="100"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:scrollbarAlwaysDrawVerticalTrack="false"
+                    android:scrollbars="horizontal"
+                    android:singleLine="true"
+                    android:visibility="invisible" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/errMGOthers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupMake_geyser_Make"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btnMGeyserType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupMGeyserType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnMGeyserType"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errGeyserType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupMGeyserType"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btnMGeyserInsideBathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupMGeyserInsideBathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnMGeyserInsideBathroom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnGeyserInYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_yes"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radBtnGeyserInNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_no"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errGeyserInsideBathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupMGeyserInsideBathroom"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lerBottomPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llrightpanel"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnMakeandGeyserSaveandNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/save_next_button"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/btnMakeandGeyserPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/btnMakeandGeyserSaveandNext"
+            android:background="@drawable/save_next_button"
+            android:text="Previous" />
+
+        <TextView
+            android:id="@+id/errmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnMakeandGeyserPrev"
+            android:layout_alignBottom="@+id/btnMakeandGeyserPrev"
+            android:layout_alignLeft="@+id/llleftpanel"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:text="@string/errro_manditory_message_Eng"
+            android:textColor="@color/red"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

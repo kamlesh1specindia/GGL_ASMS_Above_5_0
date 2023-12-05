@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/table_background" >
+    
+    <RelativeLayout
+        android:id="@+id/relViewAssignBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/relViewAssignListHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/banner_tabletop" >
+
+            <TextView
+                android:id="@+id/lblViewAssign_lst_header_custid"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_serial_number_Eng"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/View01"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custid"
+                android:background="@drawable/table_seperator_vertical" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lblViewAssign_lst_header_custname"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custid"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_material_name_Eng"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/View02"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custname"
+                android:background="@drawable/table_seperator_vertical" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lblViewAssign_header_lst_custadd"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custname"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_supplied_by_Eng"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/View03"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lblViewAssign_header_lst_custadd"
+                android:background="@drawable/table_seperator_vertical" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lbl_chargable_item"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblViewAssign_header_lst_custadd"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_chargable_quantity_Eng"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+            
+              <ImageView
+                android:id="@+id/View04"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lbl_chargable_item"
+                android:background="@drawable/table_seperator_vertical" >
+                  
+            </ImageView>
+            
+            <TextView
+                android:id="@+id/lbl_non_chargable_item"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lbl_chargable_item"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_non_chargable_quantity_Eng"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+            
+             <ImageView
+                android:id="@+id/View05"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lbl_non_chargable_item"
+                android:background="@drawable/table_seperator_vertical" >
+                  
+            </ImageView>
+            
+             <TextView
+                android:id="@+id/lbl_expiryDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lbl_non_chargable_item"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_expiry_date_Eng"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+            
+              
+             <ImageView
+                android:id="@+id/View06"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lbl_expiryDate"
+                android:background="@drawable/table_seperator_vertical" >
+                  
+            </ImageView>
+            
+             <TextView
+                android:id="@+id/lbl_replace_expiryDate"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lbl_expiryDate"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_replace_expiry_date_Eng"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+            
+              <ImageView
+                android:id="@+id/View07"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lbl_replace_expiryDate"
+                android:background="@drawable/table_seperator_vertical" >
+                  
+            </ImageView>
+            
+             <TextView
+                android:id="@+id/lbl_action"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lbl_replace_expiryDate"
+                android:paddingLeft="10dp"
+                android:text="@string/lbl_save_edit_Eng"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relViewAssignList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rltBottomView"
+            android:layout_below="@+id/relViewAssignListHeader" >
+
+            <ListView
+                android:id="@+id/lstViewAssignCustinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:cacheColorHint="@color/cachehint"
+                android:clickable="false"
+                android:divider="@drawable/line1"
+                android:dividerHeight="3dp"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical" 
+                android:footerDividersEnabled="true"
+                />
+
+            <TextView
+                android:id="@+id/lblViewAssignCustEmptyList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                android:fadingEdge="none"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:text="@string/title_EmptyList_Eng"
+                android:textColor="@color/form_blue"
+                android:textSize="25sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rltBottomView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+            
+            <Button
+                android:id="@+id/btnPaintingNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/save_next_button"
+                android:text="Next" />
+
+            <Button
+                android:id="@+id/btnPaintingPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/btnPaintingNext"
+                android:background="@drawable/save_next_button"
+                android:text="Previous" />
+
+            <TextView
+                android:id="@+id/errmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnPaintingPrev"
+                android:layout_marginLeft="10dp"
+                android:maxLines="2"
+                android:text="@string/errro_manditory_message_Eng"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+            
+            
+    
+
+         </RelativeLayout>
+    
+	</RelativeLayout>
+</LinearLayout>

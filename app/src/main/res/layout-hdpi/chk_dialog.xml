@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/form_background_grey"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:id="@+id/lerTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lerLeft"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"	 >
+
+            <TextView
+                android:id="@+id/txtDamage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_header_damage"
+                android:textStyle="bold"
+                android:padding="7dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="@drawable/my_border_dialog" />
+
+            <RadioGroup
+                android:id="@+id/radGroupDamage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/table_partition_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lerRight"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/txtCause"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_header_cause"
+                android:textStyle="bold"
+                android:padding="7dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="@drawable/my_border_dialog" />
+
+            <RadioGroup
+                android:id="@+id/radGroupCause"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/table_partition_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lerBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/lerTop"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp" >
+
+<!--         <Button -->
+<!--             android:id="@+id/btnOk" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:padding="7dp" -->
+<!--             android:textSize="16sp" -->
+<!--             android:textStyle="bold" -->
+<!--             android:layout_marginLeft="10dp" -->
+<!--             android:layout_marginRight="10dp" -->
+<!--             android:background="@drawable/save_next_button" -->
+<!--             android:text="@android:string/ok" /> -->
+        
+         <Button
+            android:id="@+id/btnOk"
+            android:layout_width="80dp"
+            android:layout_height="40dp"           
+            android:layout_marginRight="5dp"            
+            android:textSize="20sp"            
+            android:background="@drawable/save_next_button"
+            android:text="@android:string/ok" />
+        
+        <!-- <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/save_next_button"
+            android:layout_weight="1"
+            android:text="Cancel" /> -->
+        
+    </LinearLayout>
+
+</RelativeLayout>

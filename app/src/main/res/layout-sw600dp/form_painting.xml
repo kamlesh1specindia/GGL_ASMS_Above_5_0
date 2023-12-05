@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_background"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlaLayoutPainting"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/banner_clamping"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/lblPaintingHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/header_painting_Eng"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llleftpanel"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlaLayoutPainting"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/lblPaintingPaintSetisfactory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_painting_PaintSetisfactory_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPaintingPaint"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/lblPaintingPaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_painting_paint_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblPaintingORingSetisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_O_RING_Setisfactory_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblpaintingORINGMeter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_O_RING_Meter_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblPaintingOringforDOMRegulator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_O_ring_for_DOM_regulator_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblPaintingOringforAudcoGland"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_O_ring_for_Audco_gland_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivmiddlepanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llleftpanel"
+            android:layout_below="@+id/rlaLayoutPainting"
+            android:layout_toRightOf="@+id/llleftpanel"
+            android:background="@drawable/table_partition_vertical" />
+
+        <LinearLayout
+            android:id="@+id/llrightpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlaLayoutPainting"
+            android:layout_toRightOf="@+id/ivmiddlepanel"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnPaintingPaintSetisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupPaintingPaintSetisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnPaintingPaintSetisfactory"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_yes"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radBtnNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_no"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errPaintSetisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupPaintingPaintSetisfactory"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relPaintingPaint"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/edtPaintingPaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:hint="@string/lbl_meter_painting_Eng"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" />
+
+                <TextView
+                    android:id="@+id/errPaintingPaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/edtPaintingPaint"
+                    android:maxLines="2"
+                    android:textColor="@color/form_blue"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btnPaintingORingSetisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupPaintingORingSetisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnPaintingORingSetisfactory"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnOringYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_yes"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radBtnOringNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_no"
+                        android:textColor="@color/black" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errPaintingORingSetisfactory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupPaintingORingSetisfactory"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llOringDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <EditText
+                        android:id="@+id/edtPaintingORINGMeter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/textbox"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="27dp" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/errPaintingORINGMeter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/edtPaintingORINGMeter"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <EditText
+                        android:id="@+id/edtPaintingOringforDOMRegulator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/textbox"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="27dp" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/errPaintingOringforDOMRegulator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/edtPaintingOringforDOMRegulator"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <EditText
+                        android:id="@+id/edtPaintingOringforAudcoGland"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/textbox"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="27dp" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/errPaintingOringforAudcoGland"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/edtPaintingOringforAudcoGland"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lerBottomPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llrightpanel"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPaintingNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/save_next_button"
+                android:text="Next" />
+
+            <Button
+                android:id="@+id/btnPaintingPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/btnPaintingNext"
+                android:background="@drawable/save_next_button"
+                android:text="Previous" />
+
+            <TextView
+                android:id="@+id/errmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnPaintingPrev"
+                android:layout_marginLeft="10dp"
+                android:maxLines="2"
+                android:text="@string/errro_manditory_message_Eng"
+                android:textColor="@color/red"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

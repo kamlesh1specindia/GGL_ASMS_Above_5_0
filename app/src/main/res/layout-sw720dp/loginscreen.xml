@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imvlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="550dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/relLoginBox"
+        android:layout_width="500dp"
+        android:layout_height="320dp"
+        android:layout_below="@+id/relLogo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/table_background_login" >
+
+        <TextView
+            android:id="@+id/lblLoginLogingBoxTital"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/title_header_LogingBox_Eng"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <RelativeLayout
+            android:id="@+id/relLoginLables"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblLoginLogingBoxTital"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/lblDeviceId"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/title_DeviceID_Eng"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/lblLoginEnterUsername"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lblDeviceId"
+                android:layout_marginTop="15dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/title_EnterUsername_Eng"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/lblLogibEnterPassword"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/lblLoginEnterUsername"
+                android:layout_below="@+id/lblLoginEnterUsername"
+                android:layout_marginTop="15dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/title_EnterPassword_Eng"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLoginTexts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblLoginLogingBoxTital"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/relLoginLables"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/lblSugDeviceId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lblDeviceId"
+                android:layout_alignBottom="@+id/lblDeviceId"
+                android:layout_toRightOf="@+id/lblDeviceId"
+                android:ems="10"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="dgfdgfdgfh"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/edtLoginUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblSugDeviceId"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox_login"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:maxLength="15"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/edtLoginPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtLoginUsername"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox_login"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/blue" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relLoginTexts"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/button_login"
+            android:text="@string/title_ButtonLogin_Eng"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/logniLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnLogin"
+            android:layout_alignBottom="@+id/btnLogin"
+            android:layout_alignRight="@+id/relLoginTexts"
+            android:button="@drawable/custome_checkbox_selector"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relBottomBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relLoginBox"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/banner_bottom" >
+
+        <TextView
+            android:id="@+id/lblLoginSafetyTips"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginRight="20dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_margin="20dp"
+        android:text="Android 9(Pie) Supported"/>
+</RelativeLayout>

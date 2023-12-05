@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_setting_view_log"
+            android:textSize="18sp"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+         <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_below="@+id/rlaLayoutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" >
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/TvContractInfoDetails"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+			            android:id="@+id/linearLayout1"
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent" >
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView1"
+                        android:fadeScrollbars="false"
+                        android:layout_width="wrap_content"
+                        android:fillViewport="true"
+                        android:scrollbarStyle="outsideInset"
+                        android:layout_height="fill_parent" >
+
+					
+			                        
+                        <TextView
+                            android:id="@+id/Tvpreviewreports"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="top"
+                            android:paddingLeft="10dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:typeface="monospace" />
+                        
+                    </HorizontalScrollView>
+                    </LinearLayout>
+                    
+                </ScrollView>
+           
+        </LinearLayout>
+
+<!--     <WebView -->
+<!--         android:id="@+id/webViewLog" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_margin="5dp" -->
+<!--         android:layout_below="@+id/rlaLayoutDetails" /> -->
+    
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/title_ButtonLogout_Eng"
+        android:textSize="14sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnChangePwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ButtonChangePassword"
+        android:textSize="14sp"
+        android:textStyle="bold" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnviewAssignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Assignment"
+        android:textSize="14sp"
+        android:textStyle="bold" >
+    </Button>
+
+</LinearLayout>

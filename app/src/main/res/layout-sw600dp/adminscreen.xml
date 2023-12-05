@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/form_background_grey" >
+    
+     <RelativeLayout
+        android:id="@+id/rlaLayoutAdmin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="20dp"
+        android:layout_margin="20dp" >
+		
+        <TextView
+	        android:id="@+id/lblAdmin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"            
+	        android:textSize="20sp"
+	        android:textStyle="bold" 
+	        android:text="@string/header_Admin_Eng"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+    </RelativeLayout>
+    
+         <TextView
+	        android:id="@+id/txtAdmin"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="20dp"
+	        android:textSize="18sp" 
+	        android:text="@string/help_text"
+	        android:textColor="@color/black"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+         <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+	         <Button
+		        android:id="@+id/btnAdmin"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:background="@drawable/save_next_button"
+		        android:layout_margin="20dp"
+		        android:padding="15dp"
+		        android:textSize="18dp" 
+		        android:focusable="false"
+		        android:text="@string/header_Admin_Service_Eng"
+	        	android:textAppearance="?android:attr/textAppearanceLarge" />
+	         
+	         <Button
+		        android:id="@+id/btnLogout"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_margin="20dp"
+		        android:padding="15dp"
+		        android:background="@drawable/save_next_button"
+		        android:textSize="18dp" 
+		        android:focusable="false"
+		        android:text="@string/title_ButtonLogout_Eng"
+	        	android:textAppearance="?android:attr/textAppearanceLarge" />
+         </LinearLayout>
+    
+</LinearLayout>

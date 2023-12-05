@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/form_background_grey"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="20dp" >
+    
+     <RelativeLayout
+        android:id="@+id/relViewAssignHeaderMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/banner_searchpannel"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/relViewAssignHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblViewAssignHeaderCustid"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/title_viewassign_custid_Eng"
+            android:textColor="@color/form_green"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtViewAssignHeaderCustid"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblViewAssignHeaderCustid"
+            android:background="@drawable/textbox"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@+id/edtViewAssignHeaderCustName"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:scrollHorizontally="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="horizontal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/lblViewAssignHeaderCustName"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/edtViewAssignHeaderCustid"
+            android:text="@string/title_viewassign_custname_Eng"
+            android:textColor="@color/form_green"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtViewAssignHeaderCustName"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lblViewAssignHeaderCustName"
+            android:background="@drawable/textbox"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:scrollHorizontally="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbars="horizontal" >
+        </EditText>
+
+        
+         <Button
+            android:id="@+id/btnViewAssignHeaderLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_process"
+            android:paddingLeft="1dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="invisible" >
+        </Button>
+        
+        <TextView
+            android:id="@+id/lblViewAssignHeaderCustStatus"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edtViewAssignHeaderCustName"
+            android:layout_alignBottom="@+id/edtViewAssignHeaderCustName"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/edtViewAssignHeaderCustName"
+            android:text="@string/title_viewassign_status_Eng"
+            android:textColor="@color/form_green"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!-- <Spinner -->
+        <!-- android:id="@+id/spnViewAssignHeaderCustStatus" -->
+        <!-- android:layout_width="200dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_alignTop="@+id/lblViewAssignHeaderCustStatus" -->
+        <!-- android:layout_toRightOf="@+id/lblViewAssignHeaderCustStatus" -->
+        <!-- android:background="@drawable/textbox_scrolldown" -->
+        <!-- android:paddingLeft="4dp" -->
+        <!-- android:paddingRight="2dp" android:layout_marginLeft="10dp"/> -->
+
+        <Button
+            android:id="@+id/btnViewAssignHeaderCustStatus"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/lblViewAssignHeaderCustStatus"
+            android:background="@drawable/medium_left"
+            android:drawableRight="@drawable/medium_right"
+            android:gravity="left|center"
+            android:paddingLeft="4dp" />
+        
+        <Button
+            android:id="@+id/btnViewAssignHeaderRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="28dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_viewassign_Refresh_Eng"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_refresh"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </Button>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/relViewFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relViewAssignHeader"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp">
+        
+         <TextView
+            android:id="@+id/lblViewAssignHeaderMRUnit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/title_viewassign_mrunit_Eng"
+            android:textColor="@color/form_green"
+            android:textSize="20dp"
+            android:textStyle="bold" >
+        </TextView>
+        
+        <Button
+            android:id="@+id/btnViewAssignHeaderMru"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/small_left"
+            android:drawableRight="@drawable/small_right"
+            android:gravity="left|center"
+            android:layout_toRightOf="@+id/lblViewAssignHeaderMRUnit"
+            android:text="Select"
+            android:paddingLeft="4dp" />
+        
+        <TextView
+            android:id="@+id/lblViewAssignHeaderSocietyName"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnViewAssignHeaderMru"
+            android:text="@string/title_viewassign_societyname_Eng"
+            android:textColor="@color/form_green"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+        
+         <Button
+            android:id="@+id/btnViewAssignHeaderSocietyName"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/big_left"
+            android:drawableRight="@drawable/big_right"
+            android:gravity="left|center"
+            android:layout_toRightOf="@+id/lblViewAssignHeaderSocietyName"
+            android:text="Select"
+            android:paddingLeft="4dp" />
+         
+         
+         <TextView
+             android:id="@+id/txtMeterNumberLbl"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:text="@string/title_view_cust_meter_number_Eng"
+             android:layout_toRightOf="@+id/btnViewAssignHeaderSocietyName"
+             android:textColor="@color/form_green"
+             android:layout_marginLeft="10dp"
+              android:textSize="20dp"
+             android:textStyle="bold" />
+
+         <EditText
+             android:id="@+id/edtMeterNumberValue"
+             android:layout_width="220dp"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/txtMeterNumberLbl"
+             android:background="@drawable/textbox"
+             android:imeOptions="actionDone"
+             android:maxLines="1"
+             android:layout_marginLeft="2dp"
+             android:minLines="1"
+             android:singleLine="true"
+             android:nextFocusDown="@+id/edtViewAssignHeaderCustName"
+             android:paddingLeft="2dp"
+             android:paddingRight="2dp"
+             android:scrollHorizontally="true"
+             android:scrollbarAlwaysDrawHorizontalTrack="true"
+             android:scrollbarAlwaysDrawVerticalTrack="false"
+             android:scrollbars="horizontal"
+             android:textSize="16dp" >
+
+         </EditText>
+         
+         <Button
+            android:id="@+id/btnViewAssignHeaderFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_find"
+            android:layout_marginLeft="10dp"
+            android:text="@string/button_viewassign_Find_Eng"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </Button>
+         
+        
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relViewAssignBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relViewAssignHeaderMain"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/relViewAssignListHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/banner_tabletop" >
+
+            <TextView
+                android:id="@+id/lblViewAssign_lst_header_custid"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="@string/title_viewassign_custid_Eng"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/View01"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custid"
+                android:background="@drawable/table_seperator_vertical" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lblViewAssign_lst_header_custname"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custid"
+                android:paddingLeft="10dp"
+                android:text="@string/title_viewassign_custname_Eng"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/View02"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custname"
+                android:background="@drawable/table_seperator_vertical" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lblViewAssign_header_lst_custadd"
+                android:layout_width="530dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblViewAssign_lst_header_custname"
+                android:paddingLeft="10dp"
+                android:text="@string/title_viewassign_custadd_Eng"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/View03"
+                android:layout_width="2dp"
+                android:layout_height="41dp"
+                android:layout_toRightOf="@+id/lblViewAssign_header_lst_custadd"
+                android:background="@drawable/table_seperator_vertical" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/lblViewAssign_header_lst_walksequnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lblViewAssign_header_lst_custadd"
+                android:paddingLeft="10dp"
+                android:text="@string/title_viewassign_walksequence_Eng"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relViewAssignList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relViewAssignListHeader" >
+
+            <ListView
+                android:id="@+id/lstViewAssignCustinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="40dp"
+                android:cacheColorHint="@color/cachehint"
+                android:clickable="false"
+                android:divider="@drawable/line1"
+                android:dividerHeight="3dp"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical" 
+                android:footerDividersEnabled="true"
+                />
+
+            <TextView
+                android:id="@+id/lblViewAssignCustEmptyList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="100dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                android:fadingEdge="none"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical"
+                android:text="@string/title_EmptyList_Eng"
+                android:textColor="@color/form_blue"
+                android:textSize="25dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relViewAssignListOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/banner_tablebottom"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/lblViewAssignShwngRslt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="Showing Results "
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblViewAssignShwngRsltPageNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/lblViewAssignShwngRslt"
+                android:text=" 0"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblViewAssignShwngRsltDash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/lblViewAssignShwngRsltPageNo"
+                android:text="-"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblViewAssignShwngRsltRowsperpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/lblViewAssignShwngRsltDash"
+                android:text="0"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblViewAssignShwngRsltOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/lblViewAssignShwngRsltRowsperpage"
+                android:text="of"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblViewAssignShwngRsltTotrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/lblViewAssignShwngRsltOf"
+                android:text="0"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnViewAssignLast"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_tablebottom_last"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btnViewAssignNext"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/btnViewAssignLast"
+                android:src="@drawable/arrow_tablebottom_next"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btnViewAssignPrev"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="65dp"
+                android:layout_toLeftOf="@+id/btnViewAssignNext"
+                android:src="@drawable/arrow_tablebottom_previous"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btnViewAssignFirst"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/btnViewAssignPrev"
+                android:layout_alignBottom="@+id/btnViewAssignPrev"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/btnViewAssignPrev"
+                android:src="@drawable/arrow_tablebottom_first"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

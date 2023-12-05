@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_background"
+        android:paddingBottom="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlaLayoutRcc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banner_clamping"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/lblTstHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/header_testing_Eng"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llleftpanel"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlaLayoutRcc"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTstInitPressure"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_initial_pressure_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTstFinalPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_final_pressure_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTstPressureDrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_pressure_drop_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTstDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_duration_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTstTestPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_test_pass_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWhrLkg"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTstTestPassReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="18dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_test_pass_reason_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:visibility="invisible" />
+                
+                    <TextView
+                    android:id="@+id/lblTstTestRemarkLkgDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_test_pass_remarkforlkg_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivmiddlepanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llleftpanel"
+            android:layout_below="@+id/rlaLayoutRcc"
+            android:layout_toRightOf="@+id/llleftpanel"
+            android:background="@drawable/table_partition_vertical" />
+
+        <LinearLayout
+            android:id="@+id/llrightpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlaLayoutRcc"
+            android:layout_toRightOf="@+id/ivmiddlepanel"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtTstInitPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="2dp"
+                     android:freezesText="true" 
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/errTstInitPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edtTstInitPressure"
+                    android:layout_alignBottom="@+id/edtTstInitPressure"
+                    android:layout_toRightOf="@+id/edtTstInitPressure"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+                
+                <TextView
+                    android:id="@+id/errTstInitPressurevalidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/errTstInitPressure"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+                     
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtTstFinalPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="2dp"
+                     android:freezesText="true" 
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/errTstFinalPressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/edtTstFinalPressure"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+                
+                <TextView
+                    android:id="@+id/errTstFinalPressurevalidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/errTstFinalPressure"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/sugTstPressureDrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtTstDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="2dp"
+                     android:freezesText="true" 
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/errTstDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/edtTstDuration"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/sugTstTestPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:focusable="false"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relWhrLkg"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <GridView
+                    android:id="@+id/grdViewTstGasLckge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/sugTstTestPass"
+                    android:columnWidth="60dp"
+                    android:gravity="center"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth" >
+                </GridView>
+                
+                <EditText
+                    android:id="@+id/edtTstTestRemarkLkgDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:layout_marginTop="125dp"
+                    android:gravity="top|left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine|textAutoComplete"     
+                	android:maxLines="8"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="10dp"
+                    android:maxLength="120"
+                    android:scrollHorizontally="true"
+                	android:scrollbarAlwaysDrawHorizontalTrack="true"
+                	android:scrollbarAlwaysDrawVerticalTrack="false"
+                	android:scrollbars="horizontal" >
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTestingGiFitting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llrightpanel"
+            android:layout_margin="15dp"
+            android:background="@drawable/table_background"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/rlaLayoutGiFitting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/banner_top"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/lblTstGFHeadr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/header_testing_gifittings_Eng"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/leftGpanel"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rlaLayoutGiFitting"
+                android:layout_marginLeft="2dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFSatisfactory"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_statisfactory_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:paddingTop="5dp"
+                  android:id="@+id/llGifiting" >
+                    
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFElbow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_elbow_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFTee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_tee_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFHexNipple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_hex_nipple_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFUnion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_union_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFPlug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_plug_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFCap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_gi_cap_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/lblTstGFCouping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right"
+                        android:text="@string/title_testing_gi_gi_coupling_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </LinearLayout>
+              </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivmiddleGpanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/leftGpanel"
+                android:layout_below="@+id/rlaLayoutGiFitting"
+                android:layout_toRightOf="@+id/leftGpanel"
+                android:background="@drawable/table_partition_vertical" />
+
+            <LinearLayout
+                android:id="@+id/rightGpanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlaLayoutGiFitting"
+                android:layout_toRightOf="@+id/ivmiddleGpanel"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp" >
+
+					<Button
+                        android:id="@+id/btnTstGFSatisfctry"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/textbox_scrolldown"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="27dp" />
+					
+                    <RadioGroup
+	                    android:id="@+id/radGroupGIFittingSatisfactory"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_toRightOf="@+id/btnTestingLeakageRectified"
+	                    android:orientation="horizontal"
+	                    android:visibility="visible" >
+	
+		                    <RadioButton
+		                        android:id="@+id/radBtnGIFittingYes"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/lable_yes"
+		                        android:textColor="@color/black"
+		                        android:textSize="16sp" >
+		                    </RadioButton>
+		
+		                    <RadioButton
+		                        android:id="@+id/radBtnGIFittingNo"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:text="@string/lable_no"
+		                        android:textColor="@color/black"
+		                        android:textSize="16sp" >
+		                    </RadioButton>
+                </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/errTstGFSatisfctry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/radGroupGIFittingSatisfactory"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:id="@+id/llgifitingDetail" >
+                    
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/edtTstGFElbow" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:background="@drawable/textbox" -->	
+<!--                         android:ems="10" -->
+<!--                         android:enabled="false" -->
+<!--                         android:imeOptions="actionNext" -->
+<!--                         android:inputType="number" -->
+<!--                         android:maxLength="3" -->
+<!--                         android:paddingLeft="2dp" -->
+<!--                         android:paddingRight="27dp" > -->
+<!--                     </EditText> -->
+	
+					<CheckBox android:id="@+id/chkTstGFElbow" 
+					    android:layout_height="wrap_content"
+					    android:layout_width="wrap_content"
+					    android:button="@drawable/custome_checkbox_selector"
+					    android:enabled="false"
+					    android:paddingLeft="2dp"/>
+					
+<!--                     <Button -->
+<!--                         android:id="@+id/btnTstGFElbow" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toRightOf="@+id/chkTstGFElbow" -->
+<!--                         android:background="@drawable/icon_damage" -->
+<!--                         android:clickable="false" -->
+<!--                         android:maxLines="2" -->
+<!--                         android:textColor="@color/red" -->
+<!--                         android:textSize="13dp" /> -->
+
+                    <TextView
+                        android:id="@+id/wrrTstGFElbow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFElbow"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errTstGFElbow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wrrTstGFElbow"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFElbow"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/sugTstGFTee" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:background="@drawable/textbox" -->
+<!--                         android:ems="10" -->
+<!--                         android:enabled="false" -->
+<!--                         android:imeOptions="actionNext" -->
+<!--                         android:inputType="number" -->
+<!--                         android:maxLength="3" -->
+<!--                         android:paddingLeft="2dp" -->
+<!--                         android:paddingRight="27dp" /> -->
+					<CheckBox android:id="@+id/chkTstGFTee" 
+					    android:layout_height="wrap_content"
+					    android:layout_width="wrap_content"
+					    android:enabled="false"
+					    android:button="@drawable/custome_checkbox_selector"
+					    android:paddingLeft="2dp"/>
+
+<!--                     <Button -->
+<!--                         android:id="@+id/btnTstGFTee" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toRightOf="@+id/chkTstGFTee" -->
+<!--                         android:background="@drawable/icon_damage" -->
+<!--                         android:clickable="false" -->
+<!--                         android:maxLines="2" -->
+<!--                         android:textColor="@color/red" -->
+<!--                         android:textSize="13dp" /> -->
+
+                    <TextView
+                        android:id="@+id/wrrTstGFTee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFTee"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errTstGFTee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wrrTstGFTee"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFTee"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/edtTstGFHexNipple" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:background="@drawable/textbox" -->
+<!--                         android:ems="10" -->
+<!--                         android:enabled="false" -->
+<!--                         android:imeOptions="actionNext" -->
+<!--                         android:inputType="number" -->
+<!--                         android:maxLength="3" -->
+<!--                         android:paddingLeft="2dp" -->
+<!--                         android:paddingRight="27dp" > -->
+<!--                     </EditText> -->
+
+					<CheckBox android:id="@+id/chkTstGFHexNipple" 
+					    android:layout_height="wrap_content"
+					    android:layout_width="wrap_content"
+					    android:enabled="false"
+					    android:button="@drawable/custome_checkbox_selector"
+					    android:paddingLeft="2dp"/>
+
+<!--                     <Button -->
+<!--                         android:id="@+id/btnTstGFHexNipple" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toRightOf="@+id/chkTstGFHexNipple" -->
+<!--                         android:background="@drawable/icon_damage" -->
+<!--                         android:clickable="false" -->
+<!--                         android:maxLines="2" -->
+<!--                         android:textColor="@color/red" -->
+<!--                         android:textSize="13dp" /> -->
+
+                    <TextView
+                        android:id="@+id/wrrGFHexNipple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFHexNipple"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errGFHexNipple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wrrGFHexNipple"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFHexNipple"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/sugTstGFUnion" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:background="@drawable/textbox" -->
+<!--                         android:ems="10" -->
+<!--                         android:enabled="false" -->
+<!--                         android:imeOptions="actionNext" -->
+<!--                         android:inputType="number" -->
+<!--                         android:maxLength="3" -->
+<!--                         android:paddingLeft="2dp" -->
+<!--                         android:paddingRight="27dp" > -->
+<!--                     </EditText> -->
+
+					<CheckBox android:id="@+id/chkTstGFUnion" 
+					    android:layout_height="wrap_content"
+					    android:layout_width="wrap_content"
+					    android:enabled="false"
+					    android:button="@drawable/custome_checkbox_selector"
+					    android:paddingLeft="2dp"/>
+
+<!--                     <Button -->
+<!--                         android:id="@+id/btnTstGFUnion" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toRightOf="@+id/chkTstGFUnion" -->
+<!--                         android:background="@drawable/icon_damage" -->
+<!--                         android:clickable="false" -->
+<!--                         android:maxLines="2" -->
+<!--                         android:textColor="@color/red" -->
+<!--                         android:textSize="13dp" /> -->
+
+                    <TextView
+                        android:id="@+id/wrrTstGFUnion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFUnion"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errTstGFUnion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wrrTstGFUnion"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFUnion"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/sugTstGFPlug" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:background="@drawable/textbox" -->
+<!--                         android:ems="10" -->
+<!--                         android:enabled="false" -->
+<!--                         android:imeOptions="actionNext" -->
+<!--                         android:inputType="number" -->
+<!--                         android:maxLength="3" -->
+<!--                         android:paddingLeft="2dp" -->
+<!--                         android:paddingRight="27dp" > -->
+<!--                     </EditText> -->
+
+					<CheckBox android:id="@+id/chkTstGFPlug" 
+					    android:layout_height="wrap_content"
+					    android:layout_width="wrap_content"
+					    android:enabled="false"
+					    android:button="@drawable/custome_checkbox_selector"
+					    android:paddingLeft="2dp"/>
+
+<!--                     <Button -->
+<!--                         android:id="@+id/btnTstGFPlug" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toRightOf="@+id/chkTstGFPlug" -->
+<!--                         android:background="@drawable/icon_damage" -->
+<!--                         android:clickable="false" -->
+<!--                         android:maxLines="2" -->
+<!--                         android:textColor="@color/red" -->
+<!--                         android:textSize="13dp" /> -->
+
+                    <TextView
+                        android:id="@+id/wrrTstGFPlug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFPlug"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errTstGFPlug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wrrTstGFPlug"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFPlug"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/sugTstGFCap" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:background="@drawable/textbox" -->
+<!--                         android:ems="10" -->
+<!--                         android:enabled="false" -->
+<!--                         android:imeOptions="actionNext" -->
+<!--                         android:inputType="number" -->
+<!--                         android:maxLength="3" -->
+<!--                         android:paddingLeft="2dp" -->
+<!--                         android:paddingRight="27dp" > -->
+<!--                     </EditText> -->
+					<CheckBox android:id="@+id/chkTstGFCap" 
+					    android:layout_height="wrap_content"
+					    android:layout_width="wrap_content"
+					    android:enabled="false"
+					    android:button="@drawable/custome_checkbox_selector"
+					    android:paddingLeft="2dp"/>
+
+<!--                     <Button -->
+<!--                         android:id="@+id/btnTstGFCap" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toRightOf="@+id/chkTstGFCap" -->
+<!--                         android:background="@drawable/icon_damage" -->
+<!--                         android:clickable="false" -->
+<!--                         android:maxLines="2" -->
+<!--                         android:textColor="@color/red" -->
+<!--                         android:textSize="13dp" /> -->
+
+                    <TextView
+                        android:id="@+id/wrrTstGFCap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFCap"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errTstGFCap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wrrTstGFCap"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFCap"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp" >
+
+<!--                     <EditText -->
+<!--                         android:id="@+id/sugTstGFCouping" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:background="@drawable/textbox" -->
+<!--                         android:ems="10" -->
+<!--                         android:enabled="false" -->
+<!--                         android:imeOptions="actionDone" -->
+<!--                         android:inputType="number" -->
+<!--                         android:maxLength="3" -->
+<!--                         android:paddingLeft="2dp" -->
+<!--                         android:paddingRight="27dp" > -->
+<!--                     </EditText> -->
+					<CheckBox android:id="@+id/chkTstGFCouping" 
+					    android:layout_height="wrap_content"
+					    android:layout_width="wrap_content"
+					    android:enabled="false"
+					    android:button="@drawable/custome_checkbox_selector"
+					    android:paddingLeft="2dp"/>
+
+<!--                     <Button -->
+<!--                         android:id="@+id/btnTstGFCouping" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginLeft="10dp" -->
+<!--                         android:layout_toRightOf="@+id/chkTstGFCouping" -->
+<!--                         android:background="@drawable/icon_damage" -->
+<!--                         android:clickable="false" -->
+<!--                         android:maxLines="2" -->
+<!--                         android:textColor="@color/red" -->
+<!--                         android:textSize="13dp" /> -->
+
+                    <TextView
+                        android:id="@+id/wrrTstGFCouping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFCouping"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/errTstGFCouping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/wrrTstGFCouping"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/chkTstGFCouping"
+                        android:maxLines="2"
+                        android:textColor="@color/red"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </LinearLayout>
+          </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/leftBottompanel"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlTestingGiFitting"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblTstPressureType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_pressure_type_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llgasRectified"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/lblTstLeakageRectified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_testing_leakage_rectified_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivmiddleBottompanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/leftBottompanel"
+            android:layout_below="@+id/rlTestingGiFitting"
+            android:layout_toRightOf="@+id/leftBottompanel"
+            android:background="@drawable/table_partition_vertical" />
+
+        <LinearLayout
+            android:id="@+id/rightBottomPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlTestingGiFitting"
+            android:layout_toRightOf="@+id/ivmiddleBottompanel"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/sugTstPressureType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:maxLength="6"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llgasRectifiedDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/lblTestingLeakageRectified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="2dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                     android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnTestingLeakageRectified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/lblTestingLeakageRectified"
+                    android:background="@drawable/textbox_scrolldown"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radGroupTestingLeakageRectified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btnTestingLeakageRectified"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <RadioButton
+                        android:id="@+id/radBtnYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lable_yes"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radBtnNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/lable_no"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errTestingLeakageRectified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/radGroupTestingLeakageRectified"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lerBottomPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rightBottomPanel"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnTestingNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/save_next_button"
+                android:text="Next" />
+
+            <TextView
+                android:id="@+id/errmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnTestingNext"
+                android:layout_alignBottom="@+id/btnTestingNext"
+                android:layout_alignLeft="@+id/leftBottompanel"
+                android:layout_marginLeft="10dp"
+                android:maxLines="2"
+                android:text="@string/errro_manditory_message_Eng"
+                android:textColor="@color/red"
+                android:textSize="13dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table_background">
+    
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutClamping"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblClampingHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_clamping_Eng"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llleftpanel"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlaLayoutClamping"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblClampingIsWorking"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:minLines="2"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:singleLine="false"
+                android:text="@string/title_clamping_is_clamping_work_Eng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        
+
+       		<LinearLayout 
+           			android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical">
+            
+       		<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+                
+                <TextView
+		                android:id="@+id/lblPipeLineProtectionClamps"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                android:gravity="right"
+		                android:text="@string/title_clamping_protection_clamp_Eng"
+		                android:textColor="@color/black"
+		                android:textSize="16sp" />
+                      
+             </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+                
+                      
+             </LinearLayout>
+
+  		<LinearLayout 
+           	android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:id="@+id/llClamping">    
+		          
+                 <!-- <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+		
+		            <TextView
+		                android:id="@+id/lblClampingMSClamp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                android:gravity="right"
+		                android:text="@string/title_clamping_ms_clamp_Eng"
+		                android:textColor="@color/black"
+		                android:textSize="16sp" />
+		        </LinearLayout> -->
+            
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+		
+		            <TextView
+		                android:id="@+id/lblClampingClampHalf"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                android:gravity="right"
+		                android:text="@string/title_clamping_ms_clamp_Eng"
+		                android:textColor="@color/black"
+		                android:textSize="16sp" />
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+		
+		            <TextView
+		                android:id="@+id/lblClampingClampOne"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="right"
+		                android:gravity="right"
+		                android:text="@string/title_clamping_clamp_one_Eng"
+		                android:textColor="@color/black"
+		                android:textSize="16sp" />
+		        </LinearLayout>
+		</LinearLayout>
+		
+  		</LinearLayout>
+		  
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblClampingCheeseHeadScrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/title_clamping_cheese_head_screw_Eng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblClampingWoodScrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/title_clamping_wood_screw_Eng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblClampingPlugType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="@string/title_clamping_plug_type_Eng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imvmiddlepanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llleftpanel"
+        android:layout_below="@+id/rlaLayoutClamping"
+        android:layout_toRightOf="@+id/llleftpanel"
+        android:background="@drawable/table_partition_vertical" />
+
+    <LinearLayout
+        android:id="@+id/llrightpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlaLayoutClamping"
+        android:layout_toRightOf="@+id/imvmiddlepanel"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnClampingIsWorking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textbox_scrolldown"
+                android:paddingLeft="2dp"
+                android:paddingRight="27dp"
+                android:text="@string/title_select_option"
+                android:visibility="gone" />
+            
+            <RadioGroup
+                    android:id="@+id/radGroupClampingIsWorking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@+id/btnClampingIsWorking"
+                    android:visibility="visible">
+	                    <RadioButton
+	                        android:id="@+id/radBtnYes"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/lable_yes"
+	                        android:textSize="16sp"
+	                        android:textColor="@color/black"
+	                         >
+	                    </RadioButton>
+	                    <RadioButton
+	                        android:id="@+id/radBtnNo"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/lable_no"
+	                        android:textSize="16sp"
+	                        android:textColor="@color/black"
+	                        android:layout_marginLeft="10dp" >
+	                    </RadioButton>
+                </RadioGroup>
+            
+            <TextView
+                android:id="@+id/errClampingIsWorking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/radGroupClampingIsWorking"
+                android:maxLines="2"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+            
+            
+        </RelativeLayout>
+        
+        
+
+	   		<LinearLayout 
+	   			    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+            
+	   		    <RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="55dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+                         
+	   		        <EditText
+		                android:id="@+id/edtClampingProtectionClamp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="15dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" /> 
+		
+		            <TextView
+		                android:id="@+id/errClampingProtectionClamp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_toRightOf="@id/edtClampingProtectionClamp"
+		                android:maxLines="2"
+		                android:textColor="@color/form_blue"
+		                android:textStyle="bold"
+		                android:textSize="13sp" /> 
+                         
+	   		        </RelativeLayout>
+            
+	   		    <RelativeLayout 
+	   		           android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@drawable/table_partition_horizontal"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+	                    
+                         <TextView android:id="@+id/txtVendorSupplied" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="center"
+                			 android:text="@string/lbl_by_supply_vendor_Eng"/>
+                         
+                         <TextView android:id="@+id/txtCompanySupplied" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtVendorSupplied"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="center"
+                			 android:text="@string/lbl_by_supply_company_Eng"/>
+
+                         <TextView android:id="@+id/txtNoChargableQty" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtCompanySupplied"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="left"
+                			 android:text="@string/lbl_non_chargable_qty_Eng"/>
+                         
+                         <TextView android:id="@+id/txtChargableQty" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtNoChargableQty"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="left"
+                			 android:text="@string/lbl_chargable_qty_Eng"/>
+                     </RelativeLayout>
+                     
+	   	<LinearLayout 
+	   		android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:id="@+id/llClampingDetail" >    
+	   		   
+	   	<!-- 	      <RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+                         
+		            
+		            
+		                <RadioGroup
+		                      android:id="@+id/radGroupMSHalfClamp"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                      <RadioButton
+		                          android:id="@+id/radBtnMSHalfClampByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="20dp"
+		                          android:layout_marginRight="15dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+
+		                      <RadioButton
+		                          android:id="@+id/radBtnMSHalfClampByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="10dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                  </RadioGroup>
+		
+		            <EditText
+		                android:id="@+id/edtClampingMSHalfClampNonChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/radGroupMSHalfClamp"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:enabled="false"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		            
+		            
+		           <EditText
+		                android:id="@+id/edtClampingMSHalfClampChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/edtClampingMSHalfClampNonChargeable"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:enabled="false"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" /> 
+		
+		            <TextView
+		                android:id="@+id/errClampingMSHalfClamp"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_toRightOf="@id/edtClampingMSHalfClampChargeable"
+		                android:maxLines="2"
+		                android:textColor="@color/form_blue"
+		                android:text="value should be less than 16."
+		                android:textStyle="bold"
+		                android:textSize="13sp" /> 
+		        </RelativeLayout> -->
+	   		    
+	   		    
+        
+		        <RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+                         
+		            
+		            
+		                <RadioGroup
+		                      android:id="@+id/radGroupClampingClampHalf"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                      <RadioButton
+		                          android:id="@+id/radBtnClampHalfByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="20dp"
+		                          android:layout_marginRight="15dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                      
+		                      <RadioButton
+		                          android:id="@+id/radBtnClampHalfByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="10dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                  </RadioGroup>
+		
+		            <EditText
+		                android:id="@+id/edtClampingClampHalfNonChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/radGroupClampingClampHalf"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		            
+		            
+		            <EditText
+		                android:id="@+id/edtClampingClampHalfChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/edtClampingClampHalfNonChargeable"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		
+		            <TextView
+		                android:id="@+id/errClampingClampHalf"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_toRightOf="@id/edtClampingClampHalfChargeable"
+		                android:maxLines="2"
+		                android:textColor="@color/form_blue"
+		                android:text="value should be less than 16."
+		                android:textStyle="bold"
+		                android:textSize="13sp" />
+		        </RelativeLayout>
+
+		        <RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+		            
+		             <RadioGroup
+		                      android:id="@+id/radGroupClampingClampOne"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                 	  <RadioButton
+		                          android:id="@+id/radBtnClampingClampOneByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="20dp"
+		                          android:layout_marginRight="15dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                      
+		                      <RadioButton
+		                          android:id="@+id/radBtnClampingClampOneByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                           android:layout_marginLeft="10dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+
+		                    
+		                  </RadioGroup>
+		
+		            <EditText
+		                android:id="@+id/edtClampingClampOneNonChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/radGroupClampingClampOne"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		            
+		            
+		            <EditText
+		                android:id="@+id/edtClampingClampOneChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/edtClampingClampOneNonChargeable"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		
+		           
+		
+		            <TextView
+		                android:id="@+id/errClampingClampOne"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_toRightOf="@id/edtClampingClampOneChargeable"
+		                android:maxLines="2"
+		                android:textColor="@color/form_blue"
+		                android:text="value should be less than 16."
+		                android:textStyle="bold"
+		                android:textSize="13sp" />
+		        </RelativeLayout>
+		</LinearLayout>
+		</LinearLayout>
+		      
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+		        
+             <RadioGroup
+		                      android:id="@+id/radGroupCheeseHeadeScrew"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                     
+
+		                      <RadioButton
+		                          android:id="@+id/radBtnCheeseHeadeScrewByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="20dp"
+		                          android:layout_marginRight="15dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                      
+		                       <RadioButton
+		                          android:id="@+id/radBtnCheeseHeadeScrewByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                           android:layout_marginLeft="10dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                  </RadioGroup>
+		
+		            <EditText
+		                android:id="@+id/edtCheeseHeadeScrewNonChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/radGroupCheeseHeadeScrew"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		            
+		            
+		            <EditText
+		                android:id="@+id/edtCheeseHeadeScrewChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/edtCheeseHeadeScrewNonChargeable"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+
+            
+
+            <TextView
+                android:id="@+id/errClampingCheeseHeadeScrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/edtCheeseHeadeScrewChargeable"
+                android:maxLines="2"
+                android:textColor="@color/form_blue"
+                android:text="value should be less than 16."
+                android:textStyle="bold"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+            
+            
+                        <RadioGroup
+		                      android:id="@+id/radGroupWoodScrew"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+                            <RadioButton
+		                          android:id="@+id/radBtnWoodScrewByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="20dp"
+		                          android:layout_marginRight="15dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                      
+		                      <RadioButton
+		                          android:id="@+id/radBtnWoodScrewByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+								  android:layout_marginLeft="10dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+
+		                      
+		                  </RadioGroup>
+		
+		            <EditText
+		                android:id="@+id/edtWoodScrewNonChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/radGroupWoodScrew"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		            
+		            
+		            <EditText
+		                android:id="@+id/edtWoodScrewChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/edtWoodScrewNonChargeable"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+            
+
+           
+
+            <TextView
+                android:id="@+id/errClampingWoodScrew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/edtWoodScrewChargeable"
+                android:maxLines="2"
+                android:textColor="@color/form_blue"
+                android:text="value should be less than 16."
+                android:textStyle="bold"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+            
+            
+            
+             <RadioGroup
+		                      android:id="@+id/radGroupPlugType"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                     
+		                      <RadioButton
+		                          android:id="@+id/radBtnPlugTypeByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="20dp"
+		                          android:layout_marginRight="15dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                      
+		                       <RadioButton
+		                          android:id="@+id/radBtnPlugTypeByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="10dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="13sp" >
+		                      </RadioButton>
+		                      
+		                  </RadioGroup>
+		
+		            <EditText
+		                android:id="@+id/edtPlugTypeNonChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/radGroupPlugType"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionNext"
+		                android:paddingRight="27dp" />
+		            
+		            
+		            <EditText
+		                android:id="@+id/edtPlugTypeChargeable"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:layout_toRightOf="@+id/edtPlugTypeNonChargeable"
+		                android:background="@drawable/textbox"
+		                android:layout_marginLeft="18dp"
+		                android:ems="10"
+		                android:maxLength="3"
+		                android:inputType="number"
+		                android:paddingLeft="2dp"
+		                android:imeOptions="actionDone"
+		                android:paddingRight="27dp" />
+
+
+            <TextView
+                android:id="@+id/errClampingPlugType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/edtPlugTypeChargeable"
+                android:maxLines="2"
+                android:textColor="@color/form_blue"
+                android:text="value should be less than 16."
+                android:textStyle="bold"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClampingSaveandNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/llrightpanel"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/save_next_button"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/btnClampingPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llrightpanel"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/btnClampingSaveandNext"
+        android:background="@drawable/save_next_button"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/errmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/llleftpanel"
+        android:layout_alignTop="@+id/btnClampingPrev"
+        android:maxLines="2"
+        android:layout_marginLeft="10dp"
+        android:text="@string/errro_manditory_message_Eng"
+        android:textColor="@color/red"
+        android:textSize="13dp" />
+
+</RelativeLayout>
+</ScrollView>

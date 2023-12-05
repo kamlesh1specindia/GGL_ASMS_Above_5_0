@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#74b848</color>
+    <color name="blue">#2d5780</color>
+    <color name="blue_light">#43b2d1</color>
+    <color name="blue_price">#117fbf</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#e87910</color>
+    <color name="brown">#b07e45</color>
+    <color name="gray">#595959</color>
+    <color name="lightgray">#808080</color>
+    
+    <color name="light_pink">#fc81fc</color>
+    <color name="dark_blue">#010d8a</color>
+    <color name="dark_violet">#870087</color>
+    <color name="light_background">#81fcf8</color>
+    <color name="blue_list_row">#0080ff</color>
+    <color name="purple_list_row">#7e7efc</color>
+    <color name="light_gray">#9FA1A4</color>
+    <color name="dark_gray">#73687d</color>
+    
+    <color name="cachehint">#00000000</color>
+    <color name="light_blue">#3399ff</color>
+    <color name="color_grey">#d9d9d9</color>
+    <color name="form_background_grey">#EBEBEB</color>
+    <color name="form_blue">#0A6DC2</color>
+    <color name="form_light_grey">#C6C7C7</color>
+    <color name="form_green">#368505</color>
+    <color name="blue_dialog">#1591d4</color>
+
+    <color name="white_transperent">#B3ffffff</color>
+</resources>

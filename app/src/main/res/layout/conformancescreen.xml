@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutConfrmnce"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblConformanceHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_Conformance_Eng"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/llSubHeading"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlaLayoutConfrmnce"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblConformanceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/title_Nonconformancereason"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/errTxtNonConfromanceReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/lblConformanceTitle"
+            android:maxLines="2"
+            android:textColor="@color/red"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llleftpanel"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llSubHeading"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblConformanceIsNC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:text="@string/title_conformance_IsNC_Eng"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivmiddelpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llleftpanel"
+        android:layout_below="@+id/llSubHeading"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/llleftpanel"
+        android:background="@drawable/table_partition_vertical" />
+
+    <LinearLayout
+        android:id="@+id/llrightpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSubHeading"
+        android:layout_toRightOf="@+id/ivmiddelpanel"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <RadioGroup
+                android:id="@+id/radGroupConformanceIsNc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radBtnConformanceIsNcYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lable_yes"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radBtnConformanceIsNcNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lable_no"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" >
+                </RadioButton>
+            </RadioGroup>
+            
+            <TextView
+	            android:id="@+id/errTxtIsNc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:layout_toRightOf="@+id/radGroupConformanceIsNc"
+	            android:maxLines="2"
+	            android:layout_marginTop="5dp"
+	            android:textColor="@color/red"
+	            android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivlistviewpanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llleftpanel"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/line1" 
+        android:visibility="visible"/>
+
+    <ListView
+        android:id="@+id/lstNonconformanceReason"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_below="@+id/ivlistviewpanel"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line1"
+        android:dividerHeight="2dp" 
+        android:visibility="gone">
+    </ListView>
+
+    <EditText
+        android:id="@+id/edtConformanceReasontext"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lstNonconformanceReason"
+        android:layout_toRightOf="@+id/llSubHeading"
+        android:background="@drawable/textbox"
+        android:ems="10"
+        android:gravity="left|center"
+        android:hint="@string/hint_Enter_reason"
+        android:maxLength="30"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnSaveAndNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtConformanceReasontext"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/save_next_button"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/btnConformancePrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtConformanceReasontext"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/btnSaveAndNext"
+        android:background="@drawable/save_next_button"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/errmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtConformanceReasontext"
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:text="@string/errro_manditory_message_Eng"
+        android:textColor="@color/red"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

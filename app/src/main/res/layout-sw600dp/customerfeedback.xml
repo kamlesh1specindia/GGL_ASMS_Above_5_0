@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/table_background"
+        android:orientation="vertical"
+        android:paddingBottom="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlaLayoutCustFeedbk"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/banner_clamping"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/lblfeedbackHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/header_Feedback_Eng"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llleftpanel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlaLayoutCustFeedbk"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblFeedbackComment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_Feedback_comment_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblFeedbackReceiptNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_Feedback_receptno_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblCustomerContactNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_Feedback_customer_number_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblFeedbackAlternateNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_Feedback_alternate_number_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblFeedbackNoticeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_Feedback_noticeno_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:background="@drawable/table_partition_horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/lblFeedbackSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_Feedback_sign_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!--         <ImageView -->
+            <!--             android:layout_width="wrap_content" -->
+            <!--             android:layout_height="wrap_content" -->
+            <!--             android:background="@drawable/table_partition_horizontal" /> -->
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivmiddlepanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/llleftpanel"
+            android:layout_below="@+id/rlaLayoutCustFeedbk"
+            android:layout_toRightOf="@+id/llleftpanel"
+            android:background="@drawable/table_partition_vertical" />
+
+        <LinearLayout
+            android:id="@+id/llrightpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlaLayoutCustFeedbk"
+            android:layout_toRightOf="@+id/ivmiddlepanel"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:paddingBottom="3dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sugFeedbackComments"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edtFeedbackComment"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_view"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:minLines="2"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="1dp"
+                    android:textSize="16sp"
+                    android:scrollHorizontally="true"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:scrollbarAlwaysDrawVerticalTrack="false"
+                    android:scrollbars="horizontal"
+                    android:maxLength="150">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtFeedbackReceiptNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:maxLength="30"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtFeedbackContactNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:enabled="false"
+
+                    android:maxLength="10"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                <ImageButton android:id="@+id/btnEditNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_bg"
+                    android:src="@android:drawable/ic_menu_edit"/>
+
+                <TextView
+                    android:id="@+id/error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:text="*"
+                    android:layout_toRightOf="@+id/radGroupPaintingPaintSetisfactory"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtFeedbackAlternateNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+                <TextView
+                    android:id="@+id/error2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+
+                    android:text="*"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="@color/red"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtFeedbackNoticeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:background="@drawable/table_partition_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/errFeedbackSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:maxLines="2"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btnFeedbackSignClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/icon_clear" />
+                <Button
+                    android:id="@+id/btnFeedbackSignPopup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btnFeedbackSignClear"
+                    android:background="@drawable/icon_signature" />
+
+                <LinearLayout
+                    android:id="@+id/feedback_signture_linear_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/errFeedbackSign"
+                    android:layout_marginRight="3dp"
+                    android:padding="7dp"
+                    android:layout_toLeftOf="@+id/btnFeedbackSignClear"
+                    android:background="@drawable/my_border_cust_fd" >
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_feedback_signture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_toLeftOf="@+id/btnFeedbackSignClear"
+                    android:layout_below="@+id/errFeedbackSign"
+                    android:visibility="gone" >
+                </ImageView>
+            </RelativeLayout>
+
+            <!--         <ImageView -->
+            <!--             android:layout_width="wrap_content" -->
+            <!--             android:layout_height="wrap_content" -->
+            <!--             android:background="@drawable/table_partition_horizontal" /> -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnPannel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llrightpanel"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnFeedbackSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/llrightpanel"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/save_next_button"
+                android:text="Submit" />
+            <Button
+                android:id="@+id/btnFeedbackPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llrightpanel"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@+id/btnFeedbackSubmit"
+                android:background="@drawable/save_next_button"
+                android:text="Previous" />
+            <CheckBox
+                android:id="@+id/checkBoxSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="248dp"
+                android:button="@drawable/custome_checkbox_selector"
+                android:layout_toLeftOf="@+id/btnFeedbackPrev"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/lblcheckBoxSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/checkBoxSummary"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="42dp"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/errmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnSurakshaPrev"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:maxLines="2"
+                android:text="@string/errro_manditory_message_Eng"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/table_background" >
+    
+     <RelativeLayout
+        android:id="@+id/rlaLayoutSync"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="0dp" >
+		
+        <TextView
+	        android:id="@+id/lblSync"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"            
+	        android:textSize="16sp"
+	        android:textStyle="bold" 
+	        android:text="@string/header_settings_sync"
+	        android:textColor="@color/white" />
+     
+    </RelativeLayout>
+    
+         <TextView
+	        android:id="@+id/txtSync"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp"
+	        android:textSize="12sp" 
+	        android:paddingLeft="0dp"
+	        android:layout_below="@+id/rlaLayoutSync"
+	        android:text="@string/synchro_text_Eng"
+	        android:textColor="@color/black"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+         <Button
+	        android:id="@+id/btnSync"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/save_next_button"
+	        android:layout_marginLeft="10dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp"
+	        android:paddingTop="2dp"
+	        android:paddingBottom="3dp"
+	        android:textSize="15sp" 
+	        android:focusable="false"
+	        android:text="Submit"
+	        android:layout_below="@+id/txtSync"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+         <Button
+	        android:id="@+id/btnAutoSub"
+	        android:layout_width="40dp"
+	        android:layout_height="30dp"
+	        android:background="@drawable/icon_process"
+	        android:padding="3dp"
+	        android:focusable="false"
+        	android:layout_toRightOf="@+id/btnSync"
+        	android:layout_below="@+id/txtSync"  
+        	android:visibility="visible"
+        	  />
+         
+            <TextView
+	        android:id="@+id/txtAutoSubMsg"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:textSize="14sp" 
+	        android:padding="2dp"
+	        android:text="@string/sync_auto_submssion_Eng"
+	        android:textColor="@color/red"
+	        android:visibility="visible"
+	        android:layout_below="@+id/txtSync"
+	        android:layout_toRightOf="@+id/btnAutoSub"
+	        android:layout_alignBaseline="@+id/btnAutoSub"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+        	 <RelativeLayout
+		        android:id="@+id/rlaLayoutSyncDataSub"
+		        android:layout_width="fill_parent"
+		        android:layout_height="35dp"
+		        android:background="@drawable/banner_clamping"
+		        android:paddingLeft="5dp"
+		        android:layout_below="@+id/btnSync"
+		        android:layout_margin="3dp" >
+				        <TextView
+					        android:id="@+id/lblDataSubmission"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:layout_centerVertical="true"            
+					        android:textSize="14sp"
+					        android:textStyle="bold" 
+					        android:text="@string/header_setting_sync_summary"
+				        	android:textAppearance="?android:attr/textAppearanceLarge" />
+   		  </RelativeLayout>
+	       <LinearLayout
+		        android:id="@+id/rlaLayoutSyncDataSubSummaryLeft"
+		        android:layout_width="220dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/rlaLayoutSyncDataSub"
+		        android:orientation="vertical"
+		        android:layout_marginLeft="0dp">
+
+			<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="0dp" >
+			                
+			   		        <TextView
+						        android:id="@+id/lblLstSubDt"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_gravity="right|center"
+						        android:textSize="14sp"
+						        android:paddingTop="15dp"
+						        android:textColor="@color/black"
+						        android:text="@string/sync_auto_submssion_lstdt_Eng"/>
+			   		</LinearLayout>
+	   		        
+			        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+		   		          <TextView
+					        android:id="@+id/lblTotRec"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_gravity="right"
+					        android:textSize="14sp"
+					        android:textColor="@color/black"
+					        android:paddingTop="15dp"
+					        android:text="@string/sync_auto_submssion_totrec_Eng"/>
+	   		       </LinearLayout>
+	   		       
+			        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		          
+		   		            <TextView
+					         android:id="@+id/lblSuccRec"
+					         android:layout_width="wrap_content"
+					         android:layout_height="wrap_content"
+					         android:layout_gravity="right"
+					         android:textSize="14sp"
+					         android:textColor="@color/black"
+					         android:paddingTop="15dp"
+					         android:text="@string/sync_auto_submssion_sucessrec_Eng"
+				        	 />
+	   		        </LinearLayout>
+	   		          
+			        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		            <TextView
+				        android:id="@+id/lblUnsuccRec"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="right|center"
+				        android:textSize="14sp"
+				        android:textColor="@color/black"
+				        android:paddingTop="15dp"
+				        android:text="@string/sync_auto_submssion_unsucessrec_Eng"/>
+	   		         </LinearLayout>
+			   <LinearLayout
+				   android:layout_width="wrap_content"
+				   android:layout_height="45.0dip"
+				   android:background="@drawable/table_partition_horizontal"
+				   android:orientation="vertical"
+				   android:paddingRight="10.0dip"
+				   android:paddingTop="5.0dip" >
+
+				   <TextView
+					   android:id="@+id/lblTotalCompletedRec"
+					   android:layout_width="wrap_content"
+					   android:layout_height="wrap_content"
+					   android:layout_gravity="right"
+					   android:paddingTop="15.0dip"
+					   android:text="@string/sync_auto_submssion_total_record_Eng"
+					   android:textColor="@color/black"
+					   android:textSize="18.0sp" />
+			   </LinearLayout>
+			   <LinearLayout
+				   android:layout_width="wrap_content"
+				   android:layout_height="45.0dip"
+				   android:background="@drawable/table_partition_horizontal"
+				   android:orientation="vertical"
+				   android:paddingRight="10.0dip"
+				   android:paddingTop="5.0dip" >
+
+				   <TextView
+					   android:id="@+id/lblTotalSyncRec"
+					   android:layout_width="wrap_content"
+					   android:layout_height="wrap_content"
+					   android:layout_gravity="right"
+					   android:paddingTop="15.0dip"
+					   android:text="@string/sync_auto_submssion_total_sync_Eng"
+					   android:textColor="@color/black"
+					   android:textSize="18.0sp" />
+			   </LinearLayout>'
+		</LinearLayout>
+		
+		<ImageView
+        android:id="@+id/ivmiddlepanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rlaLayoutSyncDataSubSummaryLeft"
+        android:layout_below="@+id/rlaLayoutSyncDataSub"
+        android:layout_toRightOf="@+id/rlaLayoutSyncDataSubSummaryLeft"
+        android:background="@drawable/table_partition_vertical" />
+		
+         <LinearLayout
+		        android:id="@+id/rlaLayoutSyncDataSubSummaryRight"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/rlaLayoutSyncDataSub"
+		        android:layout_toRightOf="@+id/ivmiddlepanel"
+		        android:orientation="vertical"
+		        android:layout_marginRight="0dp">	
+		        
+             		<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		             <TextView
+					        android:id="@+id/txtLstSubDt"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:textSize="14sp"
+					        android:paddingTop="15dp"
+					        android:textColor="@color/black"
+					        />
+             		</LinearLayout>
+             		
+             		<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		            <TextView
+					        android:id="@+id/txtTotRec"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:textSize="14sp"
+					        android:textColor="@color/black"
+					        android:paddingTop="15dp"
+					        android:layout_below="@+id/txtLstSubDt"
+					        />
+             		 </LinearLayout>
+             		 
+             		<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		            <TextView
+					        android:id="@+id/txtSuccRec"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:textSize="14sp"
+					        android:textColor="@color/black"
+					         android:paddingTop="15dp"
+					        android:layout_below="@+id/txtTotRec"/>
+             		</LinearLayout>
+             		
+             		<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="35dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		             <TextView
+					        android:id="@+id/txtUnsuccRec"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:textSize="14sp"
+					        android:textColor="@color/black"
+					        android:paddingTop="15dp"
+					        android:layout_below="@+id/txtSuccRec"/>
+             		</LinearLayout>
+			 <LinearLayout
+				 android:layout_width="wrap_content"
+				 android:layout_height="45.0dip"
+				 android:background="@drawable/table_partition_horizontal"
+				 android:orientation="vertical"
+				 android:paddingRight="10.0dip"
+				 android:paddingTop="5.0dip" >
+
+				 <TextView
+					 android:id="@+id/txtTotalCompletedRecords"
+					 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 android:layout_alignParentLeft="true"
+					 android:layout_below="@id/txtUnsuccRec"
+					 android:paddingTop="15.0dip"
+					 android:textColor="@color/black"
+					 android:textSize="18.0sp" />
+			 </LinearLayout>
+
+			 <LinearLayout
+				 android:layout_width="wrap_content"
+				 android:layout_height="45.0dip"
+				 android:background="@drawable/table_partition_horizontal"
+				 android:orientation="vertical"
+				 android:paddingRight="10.0dip"
+				 android:paddingTop="5.0dip" >
+
+				 <TextView
+					 android:id="@+id/txtTotalSyncRecord"
+					 android:layout_width="wrap_content"
+					 android:layout_height="wrap_content"
+					 android:layout_alignParentLeft="true"
+					 android:layout_below="@id/txtTotalCompletedRecords"
+					 android:paddingTop="15.0dip"
+					 android:textColor="@color/black"
+					 android:textSize="18.0sp" />
+			 </LinearLayout>
+          </LinearLayout>	
+          
+    
+</RelativeLayout>

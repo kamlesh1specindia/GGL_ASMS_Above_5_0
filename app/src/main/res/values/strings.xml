@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">ASMS</string>
+    <string name="lable_yes">YES</string>
+    <string name="lable_no">NO</string>
+    <string name="lable_ok">OK</string>
+    <string name="lable_notok">NOT OK</string>
+    <!-- Login English -->
+    <string name="title_EnterUsername_Eng">Username </string>
+    <string name="title_EnterPassword_Eng">Password </string>
+    <string name="title_ButtonLogin_Eng">Login</string>
+    <string name="title_HintUsername_Eng">Enter username!</string>
+    <string name="title_HintPassword_Eng">Enter password!</string>
+    <string name="title_ButtonLogout_Eng">Logout</string>
+    <string name="title_DeviceID_Eng">Device Id</string>
+    <string name="info_closing">Do you want to close the application?</string>
+    <string name="info_backing">Form data will be lost. Do you want to continue?</string>
+    <string name="info_pwdchk_eng">Please contact admin to change your password, otherwise it will be expired in </string>
+    <string name="info_pwdchk_guj">Please change your password, it will expire in 45 days!</string>
+    <!-- Login Gujrati -->
+    <!--     <string name="title_EnterUsername_Guj">ƒN3r yuzrnem</string> -->
+    <!--     <string name="title_EnterPassword_Guj">ƒN3r pasvDR </string> -->
+    <string name="title_EnterUsername_Guj">yuzrnem</string>
+    <string name="title_EnterPassword_Guj">pasvDR </string>
+    <string name="title_DeviceID_Guj">DIva{s Aa{DI</string>
+    <!-- Details Fregment English -->
+    <string name="title_detail_contractor_Eng">Contractor</string>
+    <string name="title_detail_team_Eng">Team</string>
+    <string name="title_detail_technician_Eng">Technician</string>
+    <string name="title_detail_fileName_Eng">Installation File Name</string>
+    <string name="title_detail_fileInsatll_Eng">Last Installation Date and Time</string>
+    <string name="title_detail_fileCreated_Eng">File Created On</string>
+    <!-- Details Fregment Gujrati -->
+    <string name="title_detail_contractor_Guj">kon§aK3r</string>
+    <string name="title_detail_team_Guj">3Im</string>
+    <string name="title_detail_technician_Guj">3eKnIsIyn</string>
+    <string name="title_detail_fileName_Guj">[NaS3ol 4yelI fa{l n&amp;gt;u nam</string>
+    <string name="title_detail_fileInsatll_Guj">[NaS3ol nI tairq smy</string>
+    <!-- Summary Activity -->
+    <string name="title_summary_testing">Is Testing Done?</string>
+    <string name="title_summary_clamping">Is Clamping work on gas line satisfactory?</string>
+    <string name="title_summary_painting">Is painting work satisfactory?</string>
+    <string name="title_summary_rccguard">Is R.C.C. guard installed properly?</string>
+    <string name="title_summary_surakshatube">Is Suraksha tube replaced?</string>
+    <string name="title_summary_meterperformance">Is Meter OK?</string>
+    <string name="title_summary_conformance">Conformance</string>
+    <!--  Summary Gujrati -->
+    <string name="title_summary_testing_Guj">xu&amp;gt; 3eS3I&amp;gt;g krel 0e?</string>
+    <string name="title_summary_clamping_Guj">kleMpIg nu&amp;gt; kam s&amp;gt;tae8kark 0e?</string>
+    <string name="title_summary_painting_Guj">Klr nu&amp;gt; kam s&amp;gt;tae8kark 0e?</string>
+    <string name="title_summary_rccguard_Guj">Aar.sI. sI. gaDœ brabr lagel 0e?</string>
+    <string name="title_summary_surakshatube_Guj">sur9a pa[p bdlel 0e?</string>
+    <string name="title_summary_meterperformance_Guj">xu&amp;gt; mI3r brobr 0e?</string>
+    <string name="title_summary_conformance_Guj">kNfoRmNs</string>
+    <!-- Form_Header.xml Screen English -->
+    <string name="title_header_customer_id_Eng">Customer Id</string>
+    <string name="title_header_customer_name_Eng">Customer Name</string>
+    <string name="title_header_contact_number_Eng">Contact Number</string>
+    <string name="title_header_date_time_Eng">Date &amp; Time</string>
+    <string name="title_header_status_Eng">Status</string>
+    <!-- Form_Header.xml Screen Gujrati -->
+    <string name="title_header_customer_id_Guj"> g/ahk n&amp;gt;br</string>
+    <string name="title_header_customer_name_Guj"> g/ahk n&amp;gt;u nam</string>
+    <string name="title_header_date_time_Guj">tarIq Ane smy</string>
+    <string name="title_header_status_Guj">S3e3s</string>
+    <string name="title_header_contact_number_Guj">KoN3ek n&amp;gt;br</string>
+    <!-- chk_dialog.xml Screen English -->
+    <string name="title_header_damage">Damage</string>
+    <string name="title_header_cause">Cause</string>
+    <!-- Header Screen -->
+    <string name="title_header_LogingBox_Eng">Login</string>
+    <string name="header_painting_Eng">PAINTING &amp; O RING</string>
+    <string name="header_rcc_Eng">R.C.C.</string>
+    <string name="header_SurakshaTube_Eng">SURAKSHA TUBE</string>
+    <string name="header_kitchen_suraksha_tube_Eng">KITCHEN SURAKSHA TUBE</string>
+    <string name="header_other_suraksha_tube_Eng">OTHER SURAKSHA TUBE</string>
+    <string name="header_Make_Geyser_Eng">GEYSER &amp; MAKE</string>
+    <string name="header_otherChecks_Eng">OTHER CHECKS</string>
+    <string name="header_testing_Eng">TESTING</string>
+    <string name="header_testing_gifittings_Eng">GI FITTINGS</string>
+    <string name="header_clamping_Eng">CLAMPING</string>
+    <string name="header_Feedback_Eng">CUSTOMER</string>
+    <string name="header_FAQ_Eng">FAQ</string>
+    <string name="header_Conformance_Eng">CONFORMANCE</string>
+    <string name="header_settings_chng_lang">CHANGE LANGUAGE</string>
+    <string name="header_settings_details">DETAILS</string>
+    <string name="header_Summary">SUMMARY</string>
+    <string name="header_setting_chng_password">CHANGE PASSWORD</string>
+    <string name="header_Help_Eng">HELP</string>
+    <string name="header_settings_sync">SUBMIT DATA</string>
+    <string name="header_Admin_Eng">ADMIN</string>
+    <string name="header_AdminService_Ip">Server IP Setting</string>
+    <string name="header_AdminService_PassUnlock">Clear Data</string>
+    <string name="header_Admin_Service_Eng">Admin Service</string>
+    <string name="header_settings_server_setup">Server Setup</string>
+    <string name="header_setting_sync_summary">DATA SUBMISSION SUMMARY</string>
+    <string name="header_setting_details_summary">LAST INSTALLATION DETAILS</string>
+    <string name="header_setting_view_log">Application Log</string>
+    <!-- Header Gujrati -->
+    <string name="title_header_LogingBox_Guj">logIn</string>
+    <string name="header_painting_Guj">klr Ane “È” rI&amp;gt;g</string>
+    <string name="header_rcc_Guj">Aar.sI. sI. gaDœ</string>
+    <string name="header_SurakshaTube_Guj">sur9a pa[p</string>
+    <string name="header_kitchen_suraksha_tube_Guj">RrsoDa nI sur9a pa[p</string>
+    <string name="header_other_suraksha_tube_Guj">ANy sur(aa pa[p</string>
+    <string name="header_Make_Geyser_Guj">gIzr ƒND mek</string>
+    <string name="header_otherChecks_Guj"> ANy cek</string>
+    <string name="header_testing_Guj">3eS3I&amp;gt;g</string>
+    <string name="header_testing_gifittings_Guj">jI.Aa[.fI3I&amp;gt;g</string>
+    <string name="header_clamping_Guj"> kleMpI&amp;gt;g</string>
+    <string name="header_Feedback_Guj">  g/ahk </string>
+    <string name="header_FAQ_Guj">ƒF.ƒ.Kyu</string>
+    <string name="header_Help_Guj">heLp</string>
+    <string name="header_Admin_Guj">ƒDmIn</string>
+    <string name="header_AdminService_Guj">ƒDmIn svIRs</string>
+    <string name="header_Conformance_Guj">kNfoRmNs</string>
+    <string name="header_Admin_Service_Guj">ƒDmIn svIRs</string>
+    <!-- Help screen -->
+    <string name="help_text">\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"</string>
+    <!-- Synchronize Fregment -->
+    <string name="synchro_text_Eng">Click on the ‘Submit’ button below to synchronize the customer data you have captured on field. </string>
+    <string name="synchro_text_Guj">Tame g/ahk MaaihtI Aek#I KrI 0e .sbim3 b3nne iKlk kro.</string>
+    <string name="sync_auto_submssion_Eng">Auto submission process is running!</string>
+    <string name="sync_auto_submssion_Guj"/>
+    <string name="sync_auto_submssion_lstdt_Eng">Last Data  Submitted Date &amp; Time </string>
+    <!--     <string name="sync_auto_submssion_totrec_Eng">Total Records Submitted</string> -->
+    <!--     <string name="sync_auto_submssion_sucessrec_Eng">Records Successfully Submitted</string> -->
+    <!--     <string name="sync_auto_submssion_unsucessrec_Eng">Records Failed for Submission</string> -->
+    <!--     <string name="sync_auto_submssion_lstdt_Guj"> A>itm sbim3 nI tairq smy </string> -->
+    <!--     <string name="sync_auto_submssion_totrec_Guj">kul sbim3 4yela De3a </string> -->
+    <!--     <string name="sync_auto_submssion_sucessrec_Guj">sbim3 4yela De3a</string> -->
+    <!--     <string name="sync_auto_submssion_unsucessrec_Guj">sbim3 n 4yela De3a </string> -->
+    <!-- Testing English -->
+    <string name="title_testing_initial_pressure_Eng">Initial Pressure</string>
+    <string name="title_testing_final_pressure_Eng">Final Pressure</string>
+    <string name="title_testing_pressure_drop_Eng">Pressure Drop</string>
+    <string name="title_testing_duration_Eng">Duration (Minutes)</string>
+    <string name="title_testing_test_pass_Eng">Did Gas Leakage Detection Test Pass ?</string>
+    <string name="title_testing_test_pass_reason_Eng">Where is the leakage?</string>
+    <string name="title_testing_test_pass_remarkforlkg_Eng">Remark for leakage Description</string>
+    <string name="title_testing_brass_ball_cock_Eng">Brass Ball Cock -8100364</string>
+    <string name="title_testing_customer_appliance_Eng">Customer Appliance - not to update in SAP</string>
+    <string name="title_testing_gi_fitting_Eng">GI Fitting</string>
+    <string name="title_testing_gi_pipe_Eng">GI Pipe</string>
+    <string name="title_testing_hose_clamp_Eng">Hose Clamp</string>
+    <string name="title_testing_isolation_valve_Eng">Isolation Valve</string>
+    <string name="title_testing_meter_Eng">Meter</string>
+    <string name="title_testing_regulator_Eng">Regulator</string>
+    <string name="title_testing_rubber_cap_Eng">Rubber Cap</string>
+    <string name="title_testing_suraksha_hose_Eng">Suraksha Hose</string>
+    <string name="title_testing_others_Eng">Others</string>
+    <string name="title_testing_pressure_type_Eng">Low/Normal/High Pressure</string>
+    <!-- High or Low Pressure -->
+    <string name="title_testing_leakage_rectified_Eng">Is Gas Leakage Rectified?</string>
+    <string name="title_testing_gi_statisfactory_Eng">Is GI Fitting work on gas link satisfactory?</string>
+    <string name="title_testing_gi_elbow_Eng">Elbow</string>
+    <string name="title_testing_gi_tee_Eng">Tee</string>
+    <string name="title_testing_gi_hex_nipple_Eng">Hex Nipple</string>
+    <string name="title_testing_gi_union_Eng">Union</string>
+    <string name="title_testing_gi_plug_Eng">Plug</string>
+    <string name="title_testing_gi_gi_cap_Eng">GI Cap</string>
+    <string name="title_testing_gi_gi_coupling_Eng">GI Coupling</string>
+    <string name="title_view_log_date_Eng">Start Time</string>
+    <!-- Testing Gujrati -->
+    <string name="title_testing_initial_pressure_Guj">x½Aat nu p/exr</string>
+    <string name="title_testing_final_pressure_Guj">eA&amp;gt;&amp;gt;itm p/exr</string>
+    <string name="title_testing_pressure_drop_Guj">p/exr m&amp;gt;a 23aDo</string>
+    <string name="title_testing_duration_Guj">smy ga5o ÜmInI3 ma&amp;gt;Ý</string>
+    <string name="title_testing_test_pass_Guj"> xu&amp;gt; lIkej m%yu 0e? </string>
+    <string name="title_testing_test_pass_reason_Guj">lIkej ky&amp;gt;a 0e?</string>
+    <string name="title_testing_test_pass_remarkforlkg_Guj">lIkej ivgt nI no&amp;gt;2</string>
+    <!-- lIkej ivgt nI no>2 -->
+    <string name="title_testing_brass_ball_cock_Guj"> ges 3ep</string>
+    <string name="title_testing_customer_appliance_Guj"> g/ahk na sa2n ma&amp;gt;</string>
+    <string name="title_testing_gi_fitting_Guj"> jI.Aa[. fI3I&amp;gt;g </string>
+    <string name="title_testing_gi_pipe_Guj">jI.Aa[.pa[p</string>
+    <string name="title_testing_hose_clamp_Guj">Haes kleMp</string>
+    <string name="title_testing_isolation_valve_Guj">AaeDkae vaLv</string>
+    <string name="title_testing_meter_Guj">mI3r</string>
+    <string name="title_testing_regulator_Guj">reGyule3r</string>
+    <string name="title_testing_rubber_cap_Guj">rbr kep</string>
+    <string name="title_testing_suraksha_hose_Guj"> sur9a rbr pa[p </string>
+    <string name="title_testing_others_Guj">ANy</string>
+    <string name="title_testing_pressure_type_Guj">lo ã nomRl ã ha[ p/exr</string>
+    <!-- A4va lo -->
+    <string name="title_testing_leakage_rectified_Guj">lIkej irper krel 0e?</string>
+    <string name="title_testing_gi_statisfactory_Guj">xu&amp;gt; +/.Aa{. fI3I&amp;gt;g nu&amp;gt; kam s&amp;gt;to*akark 0e? </string>
+    <!--  xu> +/.Aa{. fI3I>g ma lIkej poe{N3 m5el 0e? {s +Aa{ fI3I>g vkR Aon ges  lI>k se3IsfeK3rI -->
+    <string name="title_testing_gi_elbow_Guj">jI.Aa[. AeLbae</string>
+    <string name="title_testing_gi_tee_Guj">jI.Aa[. 3I</string>
+    <string name="title_testing_gi_hex_nipple_Guj">jI.Aa[. heks inPpl</string>
+    <string name="title_testing_gi_union_Guj">jI.Aa[. yuinyn</string>
+    <string name="title_testing_gi_plug_Guj">jI.Aa[. Plg</string>
+    <string name="title_testing_gi_gi_cap_Guj">jI.Aa[.kep</string>
+    <string name="title_testing_gi_gi_coupling_Guj">jI.Aa[.kplI&amp;gt;g</string>
+    <!-- Clamping English -->
+    <string name="title_clamping_is_clamping_work_Eng">Is Clamping work on gas line satisfactory?</string>
+    <string name="title_clamping_protection_clamp_Eng">Supply of Pipeline Protection Clamps</string>
+    <string name="title_clamping_ms_clamp_Eng">½\" MS Clamp</string>
+    <string name="title_clamping_clamp_half_Eng">½\" MS Clamp</string>
+    <string name="title_clamping_clamp_one_Eng">1\" MS Clamp</string>
+    <string name="title_clamping_cheese_head_screw_Eng">Cheese head screw</string>
+    <string name="title_clamping_hex_nut_Eng">Hex nut</string>
+    <string name="title_clamping_wood_screw_Eng">Wood screw</string>
+    <string name="title_clamping_plug_type_Eng">Roul Plug / Grip Plug</string>
+    <!-- Clamping Gujrati -->
+    <string name="title_clamping_is_clamping_work_Guj">kleMpIg nu&amp;gt; kam s&amp;gt;tae8kark 0e?</string>
+    <string name="title_clamping_protection_clamp_Guj">pa[pla[n p/ae3ekxn kleMpna purv#a</string>
+    <string name="title_clamping_ms_clamp_Guj">ÉãÊ" Aem.Aes.kleMp</string>
+    <string name="title_clamping_clamp_half_Guj">ÉãÊ" Aem.Aes.kleMp</string>
+    <string name="title_clamping_clamp_one_Guj">É"Aem.Aes.kleMp</string>
+    <string name="title_clamping_cheese_head_screw_Guj">cIz heD S¢u</string>
+    <string name="title_clamping_hex_nut_Guj">nmUna na xBdo</string>
+    <string name="title_clamping_wood_screw_Guj">vuD S¢u</string>
+    <string name="title_clamping_plug_type_Guj">ra]l Plg</string>
+    <!-- Change password Screen -->
+    <string name="title_EnterCurrentpassword">Enter Current password </string>
+    <string name="title_EnterNewpassword">Enter New password </string>
+    <string name="title_EnterConfirmpassword">Enter Confirm password</string>
+    <string name="title_ButtonChangePassword">Change Password</string>
+    <!-- Customer Feedback English -->
+    <string name="title_Feedback_comment_Eng">Comments (If any)</string>
+    <string name="title_Feedback_receptno_Eng">Receipt No</string>
+    <string name="title_Feedback_customer_number_Eng">Owner contact number</string>
+    <string name="title_Feedback_alternate_number_Eng">Alternate contact number</string>
+    <string name="title_Feedback_noticeno_Eng">Notice No</string>
+    <string name="title_Feedback_sign_Eng">Signature &amp; Date</string>
+    <string name="external_dir_Eng">GetSignature</string>
+    <!-- Customer Feedback Gujrati -->
+    <string name="title_Feedback_comment_Guj">g/ahk nI 3IPp~/aI jo hoy to</string>
+    <string name="title_Feedback_receptno_Guj">rsId n&amp;gt;.</string>
+    <string name="title_Feedback_customer_number_Guj">માલિકનો સંપર્ક નંબર</string>
+    <string name="title_Feedback_alternate_number_Guj">વૈકલ્પિક સંપર્ક નંબર</string>
+    <string name="title_Feedback_noticeno_Guj">Noa3Is n&amp;gt;.</string>
+    <string name="title_Feedback_sign_Guj">g/ahk nI shI Ane tarIq</string>
+    <!-- Conformance Screen -->
+    <string name="title_Nonconformancereason">Non-Conformance Reason </string>
+    <string name="title_conformance_IsNC_Eng">Is N.C.?</string>
+    <string name="hint_Enter_reason">Enter reason for nonconformance</string>
+    <string name="title_Nonconformancereason_Guj">ibnkaeNFaemRNs nu&amp;gt; kar`</string>
+    <!-- Conformance Screen Gujrati -->
+    <string name="title_conformance_IsNC_Guj">xu&amp;gt; 6rma&amp;gt; Aen.sI.0E?</string>
+    <!-- {s Aen.sI? -->
+    <!-- View Assignment Screen with Customer Details English -->
+    <string name="title_view_cust_meter_number_Eng">Meter Number</string>
+    <string name="title_viewassign_custid_Eng">Customer Id </string>
+    <string name="title_viewassign_custname_Eng">Customer Name </string>
+    <string name="title_viewassign_status_Eng">Status </string>
+    <string name="title_viewassign_custadd_Eng">Address </string>
+    <string name="title_viewassign_walksequence_Eng">WalkSequence </string>
+    <string name="button_viewassign_Find_Eng">Find </string>
+    <string name="button_viewassign_Refresh_Eng">Refresh </string>
+    <string name="title_EmptyList_Eng">No records found! </string>
+    <string name="button_viewassign_Next_Eng">Next </string>
+    <string name="button_viewassign_Prev_Eng">Prev </string>
+    <string name="title_viewassign_mrunit_Eng">MR Unit </string>
+    <string name="title_viewassign_societyname_Eng">Society Name</string>
+    <!-- View Assignment Screen with Customer Details English -->
+    <string name="title_view_cust_meter_number_Guj">mI3r n&amp;gt;br</string>
+    <string name="title_viewassign_custid_Guj"> g/ahk n&amp;gt;br </string>
+    <string name="title_viewassign_custname_Guj">g/ahk n&amp;gt;u nam</string>
+    <string name="title_viewassign_status_Guj">S3e3s </string>
+    <string name="title_viewassign_custadd_Guj"> srnamu</string>
+    <string name="title_viewassign_walksequence_Guj">vok sIkvNs </string>
+    <string name="title_EmptyList_Guj">nmUna na xBdo</string>
+    <string name="title_viewassign_mrunit_Guj">Aem Aar  AeKm</string>
+    <string name="title_viewassign_societyname_Guj">Soasay3I n&amp;gt;u nam</string>
+    <!-- Error Messages -->
+    <string name="error_enterusername">Please enter username!</string>
+    <string name="error_enterpwd">Please enter password!</string>
+    <string name="error_pwdusername">Username and Password does not match!</string>
+    <string name="error_entercurrentpwd">Please enter current password!</string>
+    <string name="error_enternewpwd">Please enter new password!</string>
+    <string name="error_enterconfirmpwd">Please enter confirm password!</string>
+    <string name="error_enternewandconfirmsamepwd">New and current password must match!</string>
+    <string name="error_currentpwd">Current password does not match!</string>
+    <string name="error_pwdLength">Password length not more/less than 8 characters!</string>
+    <string name="error_uprcasevalidation">Password must contain at least one uppercase character!</string>
+    <string name="error_lwrrcasevalidation">Password must contain at least one lowercase character!</string>
+    <string name="error_numvalidation">Password must contain at least one number!</string>
+    <string name="error_norecordfound">No records found!</string>
+    <string name="error_header_errorTitle">Error</string>
+    <string name="error_header_timeMessage">Can not get current time</string>
+    <string name="error_header_timeTitle">Current Time</string>
+    <string name="error_header_dateTitle">Date - Error</string>
+    <string name="errro_header_dateFutureMessage">Future date not possible!</string>
+    <string name="errro_header_datePastMessage">You can not set 30 days back date!</string>
+    <string name="errro_header_date_after_five_year">You can not set expiry date of after 5 years date!</string>
+    <string name="errro_manditory_message_Eng">* Mandatory Fields</string>
+    <string name="errro_manditory_message_Guj">* ગોધરાકાંડના</string>
+    <string name="title_application">ASMS</string>
+    <string name="title_logo">Logo</string>
+    <string name="title_customerList">Customer List</string>
+    <string name="title_customerId">Customer Id</string>
+    <string name="title_customerName">Customer Name</string>
+    <string name="title_customerAddress">Customer Address</string>
+    <string name="title_customerDetailsId">Customer Id:</string>
+    <string name="title_customerDetailsName">Customer Name:</string>
+    <string name="title_customerDetailsAddress">Customer Address:</string>
+    <string name="title_customerDetail_Title">ANNUAL SERVICE MAINTENANCE CARD</string>
+    <string name="title_customerDetail_DocNo">Doc. No. :</string>
+    <string name="title_customerDetail_RevNo">Rev. No. :</string>
+    <string name="title_customerDetail_EffDate">Eff. Date :</string>
+    <string name="title_customerDetailsActivity">ACTIVITY</string>
+    <string name="title_customerDetails2011">2011</string>
+    <string name="title_customerDetails2012">2012</string>
+    <string name="title_customerDetails2013">2013</string>
+    <string name="title_customerDetails2014">2014</string>
+    <string name="title_customerDetails2015">2015</string>
+    <string name="title_customerDetails1">GAS LEAKAGE DETECTION TEST IS CARRIED OUT.</string>
+    <string name="title_customerDetails2">GAS LEAKAGE (IF ANY) IS RECTIFIED.</string>
+    <string name="title_customerDetails3">CLAMPING WORK ON GAS LINE IS SATISFACTORY.</string>
+    <string name="title_customerDetails4">PAINTING WORK IS SATISFACTORY.</string>
+    <string name="title_customerDetails5">RUBBER TUBE IS REPLACED.</string>
+    <string name="title_customerDetails6">RUBBER END CAP IS PROVIDED ON IDLE POINT.</string>
+    <string name="title_customerDetails7">LAST METER READING.</string>
+    <string name="title_customerDetails8">DATE:</string>
+    <string name="title_customerDetails9">CUSTOMER\'S SIGN</string>
+    <string name="info_loadingMsg">Please wait loading customer data...</string>
+    <string name="info_saveMsg">Data saved successfully!</string>
+    <string name="info_yes">Yes</string>
+    <string name="info_no">No</string>
+    <string name="info_meter_reading">15659</string>
+    <string name="info_hintEnterYesNo">Enter value</string>
+    <!-- Admin Setting -->
+    <string name="title_settingURL">URL:</string>
+    <string name="title_settingSubmit">Submit</string>
+    <string name="title_settingUnBlock">Unblock</string>
+    <string name="title_testConnection">Test connection</string>
+    <!-- Painting English -->
+    <string name="title_painting_of_GI_Pipe_Rcc_guard_Eng">Is Painting of GI Pipe/RCC Guard?</string>
+    <string name="title_painting_PaintSetisfactory_Eng">Is Painting of GI Pipe/RCC Guard and painting work satisfactory?</string>
+    <string name="title_painting_paint_Eng">Paint</string>
+    <string name="title_O_RING_Setisfactory_Eng">Is O ring replaced?</string>
+    <string name="title_O_RING_Meter_Eng">O Ring for Meter</string>
+    <string name="title_O_ring_for_DOM_regulator_Eng">O Ring For DOM  Regulator</string>
+    <string name="title_O_ring_for_Audco_gland_Eng">O Ring for Audco gland</string>
+    <!-- Painting Gujrati -->
+    <string name="title_painting_of_GI_Pipe_Rcc_guard_Guj">Is Painting of GI Pipe/RCC Guard?</string>
+    <string name="title_painting_PaintSetisfactory_Guj">jI.Aa[.pa[p- Aar.sI.sI gaDR pe{iN3g Ane pe[iN3g kam s&amp;gt;to8kark 0e?</string>
+    <string name="title_painting_paint_Guj">Klr</string>
+    <string name="title_O_RING_Setisfactory_Guj">x&amp;gt;u “È” rI&amp;gt;g  bdlavel 0e?</string>
+    <!-- s>tao8kark rIte-->
+    <string name="title_O_RING_Meter_Guj">mI3r “È” rI&amp;gt;g</string>
+    <string name="title_O_ring_for_DOM_regulator_Guj">Daem. reGyule3r “È” rI&amp;gt;g</string>
+    <string name="title_O_ring_for_Audco_gland_Guj">AaeDkae vaLv “È” rI&amp;gt;g</string>
+    <!-- RCC English -->
+    <string name="title_rcc_sand_filling_Eng">Is Sand Filling/ Cementing of RCC Guard performed?</string>
+    <string name="title_rcc_R.c.c_work_Setisfectory_Eng">Is R.C.C. guard installed properly?</string>
+    <string name="title_rcc_Rcc_Ms_Nail_Eng">MS NAIL DIA 1/4"X3"L</string>
+    <string name="title_rcc_M.S_Nut_Eng">M.S Nut 5/16" for R.C.C</string>
+    <string name="title_rcc_Coach_Screw_Eng">Coach Screw</string>
+    <string name="title_rcc_RccGuard_Eng">RCC Guard</string>
+    <!-- RCC Gujrati -->
+    <!-- Aar.sI.sI. GaaDR pr retI A4va sImeN3 lGaave 0e ke nhI? -->
+    <string name="title_rcc_sand_filling_Guj">retI wrva-AarsIsI gaDR sImeN3I&amp;gt;g krvama Aavel 0e?</string>
+    <string name="title_rcc_R.c.c_work_Setisfectory_Guj">Aar.sI. sI. gaDœ brabr lagel 0e?</string>
+    <string name="title_rcc_Rcc_Ms_Nail_Guj">GaaDœ ma3e qIla </string>
+    <string name="title_rcc_M.S_Nut_Guj">Aar.sI. sI GaaDœ ma3e n3</string>
+    <string name="title_rcc_Coach_Screw_Guj">Kaec S¢u</string>
+    <string name="title_rcc_RccGuard_Guj">nvae Aar.sI. sI. gaDœ</string>
+    <!-- SurakshaTube English -->
+    <string name="title_expiry_date_Eng">Expiry Date</string>
+    <string name="title_expiry_date_of_replaced_rubber_tube_Eng">Expiry Date of Replace Rubber Tube</string>
+    <string name="title_surakshaTube_Replaced_Eng">Is Suraksha tube replaced?</string>
+    <string name="title_surakshaTube_79mm_1_meter_Eng">7.5 mm 1 Meter</string>
+    <string name="title_surakshaTube_79mm_15_Meter_Eng">7.9 mm 1.5 Meter</string>
+    <string name="title_surakshaTube_125mm_15_Meter_Eng">12.5 mm 1.5 Meter</string>
+    <string name="title_surakshaTube_ClampHose_8mm_Pipe_Eng">Clamp Hose 8 mm Pipe</string>
+    <string name="title_surakshaTube_ClampHose_20mm_pipe_Eng">Clamp Hose 20 mm Pipe</string>
+    <string name="title_surakshaTube_house_clamp_8mm_Eng">Hose clamp for Suraksha tube 8 mm </string>
+    <string name="title_surakshaTube_69mm_1_Meter_Eng">Suraksha tube 6.9 mm 1 meter</string>
+    <string name="title_surakshaTube_69mm_15_Meter_Eng">Suraksha tube 6.9 mm 1.5 meter</string>
+    <!-- SurakshaTube Gujrati -->
+    <string name="title_expiry_date_Guj">A&amp;gt;itm tarIq</string>
+    <string name="title_expiry_date_of_replaced_rubber_tube_Guj">rbr 3yub bdlvanI A&amp;gt;itm tarIq</string>
+    <string name="title_surakshaTube_Replaced_Guj">sur9a pa[p bdlel 0e?</string>
+    <string name="title_surakshaTube_79mm_1_meter_Guj">Ï.p Aem.Aem. É mI3r</string>
+    <string name="title_surakshaTube_79mm_15_Meter_Guj">Ï.Ñ ƒmƒm É.Í mI3r</string>
+    <string name="title_surakshaTube_125mm_15_Meter_Guj">ÉÊ.Í ƒmƒm  É.Í  mI3r</string>
+    <string name="title_surakshaTube_house_clamp_8mm_Guj">Hose clamp for Suraksha tube 8 mm </string>
+    <string name="title_surakshaTube_ClampHose_8mm_Pipe_Guj">Haes kleMp ÜÐ Aem.Aem.Ý</string>
+    <string name="title_surakshaTube_ClampHose_20mm_pipe_Guj">Haes kleMp ÜrÈ Aem.Aem.Ý</string>
+    <string name="title_surakshaTube_69mm_1_Meter_Guj">Suraksha tube 6.9 mm 1 meter</string>
+    <string name="title_surakshaTube_69mm_15_Meter_Guj">Suraksha tube 6.9 mm 1.5 meter</string>
+    <!-- Make&Geyser English -->
+    <string name="title_make_geyser_Make_Eng">Geyser &amp; Others</string>
+    <string name="title_make_Geyser_GeyserType_Eng">Geyser Type</string>
+    <string name="title_make_Geyser_IsGeyserAvailable_Eng">Is Geyser Available?</string>
+    <string name="title_make_Geyser_GeyserInsideBathroom_Eng">Geyser Inside Bathroom</string>
+    <!-- Make&Geyser Gujrati -->
+    <string name="title_make_geyser_Make_Guj">gIzr t4a ANy</string>
+    <string name="title_make_Geyser_GeyserType_Guj">gIzr 3a[p</string>
+    <string name="title_make_Geyser_IsGeyserAvailable_Guj">xu&amp;gt; gIzr 0e?</string>
+    <!-- Avelebl -->
+    <string name="title_make_Geyser_GeyserInsideBathroom_Guj">xu&amp;gt;u&amp;gt; gIzr ba4½m ma&amp;gt; 0e?</string>
+    <!-- OtherChecks English -->
+    <string name="title_otherChecks_BrassBall_Eng">Isolation / Brass Ball Valve</string>
+    <string name="title_otherChecks_BrassBallCock_Eng">Gas Tap / Brass Ball Cock</string>
+    <string name="title_otherChecks_Isolation_Ball_Valve_Eng">Isolation Ball Valve</string>
+    <string name="title_otherChecks_IsMeter_Eng">Is Meter OK?</string>
+    <string name="title_otherChecks_MeterReading_Eng">Meter Reading</string>
+    <string name="title_otherInstallation_PVCSleev_Eng">Is installation of PVC Sleeve?</string>
+    <string name="title_otherSupplyOf_Bush_Eng">Supply of ¾” x ½” Bush</string>
+    <string name="title_otherChecks_RubberCap_Eng">Rubber Cap</string>
+    <string name="title_otherChecks_MeterPerformance_Eng">Meter Performance</string>
+    <string name="title_otherChecks_MeterReadable_Eng">Meter Readable</string>
+    <string name="title_otherChecks_GiPipeInsideBasement_Eng">GI Pipe Installed inside Basement?</string>
+    <!-- OtherChecks Gujrati -->
+    <string name="title_otherChecks_BrassBall_Guj">Aa{xaelen / AaeDkae vaLv</string>
+    <string name="title_otherChecks_BrassBallCock_Guj"> Gas Tap / AaeDkae kok</string>
+    <string name="title_otherChecks_Isolation_Ball_Valve_Guj">Aa[xaelexn bael vaLv</string>
+    <string name="title_otherChecks_IsMeter_Guj">xu&amp;gt; mI3r brobr 0e?</string>
+    <string name="title_otherChecks_MeterReading_Guj">mI3r rIDI&amp;gt;g</string>
+    <string name="title_otherInstallation_PVCSleev_Guj">PaIvIsI SlIv [nS3ol 0e?</string>
+    <string name="title_otherSupplyOf_Bush_Guj">sPlay Aaef ¾” x ½” bux</string>
+    <string name="title_otherChecks_RubberCap_Guj">rbr kep</string>
+    <string name="title_otherChecks_MeterPerformance_Guj">mI3r prfoœmNs ÜcekÝ</string>
+    <string name="title_otherChecks_MeterReadable_Guj"> mI3r va&amp;gt;cI Xakay 0e?</string>
+    <string name="title_otherChecks_GiPipeInsideBasement_Guj">jI.Aa[.pa[p Waaeyra ma&amp;gt; 0e?</string>
+    <!--     <string name="sync_auto_submssion_total_record_Guj">3o3l sbmI3 4yela De3a</string> -->
+    <!--     <string name="sync_auto_submssion_total_sync_Guj">3o3l sbim3 4yela De3a</string> -->
+    <!-- Change Language Options For Radio Buttons -->
+    <string name="title_chng_lang_eng">English</string>
+    <string name="title_chng_lang_guj">gujratI</string>
+    <!-- warning -->
+    <string name="warning_clampingTitle">Warning</string>
+    <string name="warning_clampingMessageNine">value can not be more than 9.</string>
+    <string name="warning_clampingMessageTwenty">Value can not be more than 20.</string>
+    <string name="title_select_option">Select option from dropdown</string>
+    <string name="progress_submit">Submiting customer form....</string>
+    <string name="regularexpression">([0-9][0-9]\\.[0-9][0-9])</string>
+    <string name="title_view_log_response_time">Response Time</string>
+    <string name="title_view_log_submit_status">Submit Status</string>
+    <string name="title_view_log_submit_status_code">Response Code</string>
+    <string name="title_view_log_batchsize">Batch Size</string>
+    <string name="title_view_log_total_submitted_records">Total Submitted</string>
+    <string name="title_view_log_talal_failed_records">Failed Records</string>
+    <string name="title_view_log_exception">Exception</string>
+    <string name="title_view_log_object_status">Object Status</string>
+    <string name="status_object_being_creating">Intializing</string>
+    <string name="status_object_being_created">Created</string>
+    <string name="status_submit_request">Started</string>
+    <string name="status_submit_response">Submitted</string>
+    <string name="status_submit_failed">Not Submitted</string>
+    <string name="msg_select_date">Please select date first.</string>
+    <string name="lbl_view_blank_log">View Blank Log</string>
+    <string name="lbl_app_version">Ver:</string>
+    <string name="sync_auto_submssion_totrec_Eng">Record Send For Submission In Batch</string>
+    <string name="sync_auto_submssion_sucessrec_Eng">Records Successfully Submitted In Batch</string>
+    <string name="sync_auto_submssion_unsucessrec_Eng">Records Failed for Submission In Batch</string>
+    <string name="sync_auto_submssion_total_record_Eng">Total Completed Record</string>
+    <string name="sync_auto_submssion_total_sync_Eng">Total Submitted Record</string>
+    <string name="sync_auto_submssion_lstdt_Guj">A&amp;gt;itm sbmI3 nI tarIq smy</string>
+    <string name="sync_auto_submssion_totrec_Guj">bec m&amp;gt;a sbmI3 4yela kul De3a</string>
+    <string name="sync_auto_submssion_sucessrec_Guj">bec m&amp;gt;a sbmI3 4yela De3a</string>
+    <string name="sync_auto_submssion_unsucessrec_Guj">bec m&amp;gt;a sbmI3 n 4yela De3a</string>
+    <string name="sync_auto_submssion_total_record_Guj">3o3l sbmI3 4yela De3a</string>
+    <string name="sync_auto_submssion_total_sync_Guj">3o3l sbim3 4yela De3a</string>
+    <string name="msg_calling_not_supported">Sorry your device does not support calling!</string>
+    <string name="not_available">Not Available</string>
+    <string name="header_customer_status_Eng">Customer Status</string>
+    <string name="lbl_operational_status_Eng">Operational</string>
+    <string name="lbl_temp_disconnected_status_Eng">Temporary Disconnected</string>
+    <string name="lbl_force_disconnected_status_Eng">Force Disconnected</string>
+    <string name="lbl_operational_status_Guj">Aoprexnl</string>
+    <string name="lbl_temp_disconnected_status_Guj">Kamcla] iDsknek3eD</string>
+    <string name="lbl_force_disconnected_status_Guj">feasRR iDsknek3eD</string>
+    <!-- Material Screen -->
+    <string name="lbl_serial_number_Eng">Sr NO.</string>
+    <string name="lbl_material_name_Eng">Material Name</string>
+    <string name="lbl_supplied_by_Eng">Supplied By</string>
+    <string name="lbl_chargable_quantity_Eng">Chargable Quantity</string>
+    <string name="lbl_non_chargable_quantity_Eng">Non chargable Quantity</string>
+    <string name="lbl_expiry_date_Eng">Expiry Date</string>
+    <string name="lbl_replace_expiry_date_Eng">Replace Expiry Date</string>
+    <string name="lbl_save_edit_Eng">save / Delete</string>
+    <string name="lbl_serial_number_Guj">Anuk/m n&amp;gt;br</string>
+    <string name="lbl_material_name_Guj">samg/I nam</string>
+    <string name="lbl_supplied_by_Guj">sPLaay bay</string>
+    <string name="lbl_chargable_quantity_Guj">cajRebl j$4o</string>
+    <string name="lbl_non_chargable_quantity_Guj"> noncajRebl j$4o</string>
+    <string name="lbl_expiry_date_Guj">A&amp;gt;itm tarIq</string>
+    <string name="lbl_replace_expiry_date_Guj">bdlvanI A&amp;gt;itm tarIq</string>
+    <string name="lbl_save_edit_Guj">sev / DIlI3</string>
+    <string name="lbl_by_supply_vendor_Eng">Vendor\nSupplied</string>
+    <string name="lbl_by_supply_company_Eng">Company\nSupplied</string>
+    <string name="lbl_non_chargable_qty_Eng">Non Chargeble\nQuantity</string>
+    <string name="lbl_chargable_qty_Eng">Chargeble\nQuantity</string>
+    <string name="lbl_by_supply_vendor_Guj">veNDr \n purv#ae</string>
+    <string name="lbl_by_supply_company_Guj">k&amp;gt;pnI \n purv#ae</string>
+    <string name="lbl_non_chargable_qty_Guj">non cajRebl j$4ae</string>
+    <string name="lbl_chargable_qty_Guj">cajRebl j$4ae</string>
+    <string name="lbl_meter_painting_Eng">Meter</string>
+    <string name="lbl_meter_painting_Guj">mI3r</string>
+</resources>

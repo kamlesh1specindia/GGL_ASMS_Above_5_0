@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutServerIP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/lblAdminService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_AdminService_Ip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+<!--         <TextView -->
+<!--             android:id="@+id/lblDeviceId" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="200dp" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:text="@string/title_DeviceID_Eng" -->
+<!--             /> -->
+<!--         <TextView -->
+<!--             android:id="@+id/lblSugDeviceId" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="150dp" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             /> -->
+        
+    </RelativeLayout>
+
+<!--     <TextView -->
+<!--         android:id="@+id/txtAdminService" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_margin="20dp" -->
+<!--         android:text="@string/help_text" -->
+<!--         android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--         android:textColor="@color/black" -->
+<!--         android:textSize="18dp" /> -->
+
+    <LinearLayout
+        android:layout_width="1258dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/lblSettingIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:text="@string/title_settingURL"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtSettingIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.92"
+            android:background="@drawable/edit_view"
+            android:ems="10"
+            android:lines="1"
+            android:singleLine="true"
+            android:padding="15dp"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnSettingIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/save_next_button"
+            android:paddingRight="10dp"
+            android:text="@string/title_testConnection"
+            />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlaLayoutPassSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:id="@+id/lblPassSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_AdminService_PassUnlock"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/rlaLayoutUserList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingLeft="20dp" >
+        
+         <Button
+            android:id="@+id/btnClearData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/save_next_button"
+            android:text="@string/header_AdminService_PassUnlock"
+            />
+         
+               <ListView
+           android:id="@+id/list"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:cacheColorHint="@color/cachehint"
+           android:clickable="false"
+           android:divider="@drawable/line1"
+           android:dividerHeight="3dp"
+           android:fadingEdge="none"
+           android:focusable="false"
+           android:footerDividersEnabled="true"
+           android:listSelector="@android:color/transparent"
+           android:layout_below="@+id/btnClearData"
+           android:scrollbars="vertical" >
+        </ListView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

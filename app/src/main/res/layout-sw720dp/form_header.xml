@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@drawable/banner_customer_pannel"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="12" >
+
+    <LinearLayout
+        android:id="@+id/relLayoutHeaderCustDetail"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal" >
+
+        <!-- Custormer ID -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblHeaderCustId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_header_customer_id_Eng"
+                android:textColor="@color/form_green"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sugHeaderCustId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="111" >
+            </TextView>
+        </LinearLayout>
+        
+        
+         <!-- Customer name -->
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal" >
+            
+             <TextView android:id="@+id/lblHeaderCustName"
+	   			 android:layout_height="wrap_content" 
+	             android:layout_width="wrap_content"	
+	             android:textColor="@color/form_green"             
+	             android:text="@string/title_header_customer_name_Eng"
+	             android:textStyle="bold">
+	   </TextView>   
+	   
+	    <TextView android:id="@+id/sugHeaderCustName"
+	   			 android:layout_height="wrap_content" 
+	             android:layout_width="300dp"
+	             android:layout_marginLeft="10dp"
+	             android:singleLine="false"
+	             android:minLines="2"
+	             android:textColor="@color/black"  >
+	   </TextView>  
+        </LinearLayout>
+        
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+            
+             <TextView android:id="@+id/lblHeaderContactNumber"
+	   			 android:layout_height="wrap_content" 
+	             android:layout_width="wrap_content"	
+	             android:textColor="@color/form_green"             
+	             android:text="@string/title_header_contact_number_Eng"
+	             android:textStyle="bold">
+	   </TextView>   
+	   
+	    <TextView android:id="@+id/sugHeaderContactNumber"
+	   			 android:layout_height="wrap_content" 
+	             android:layout_width="wrap_content"
+	             android:layout_marginLeft="5dp"
+	             android:textColor="@color/black"  >
+	   </TextView>  
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relLayoutHeaderDateTimeDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <!-- Date & time -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblHeaderDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_header_date_time_Eng"
+                android:textColor="@color/form_green"
+                android:textStyle="bold" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edtHeaderDateTime"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textbox"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btnHeaderDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/icon_callendar" />
+
+            <TextView
+                android:id="@+id/sugHeaderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btnHeaderDateTime"
+                android:textColor="@color/black" >
+            </TextView>
+        </LinearLayout>
+        
+        
+         <!-- Status -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal" >
+	    
+            <TextView android:id="@+id/lblHeaderStatus"
+				 android:text="@string/title_header_status_Eng"
+				 android:layout_height="wrap_content" 
+				 android:layout_width="wrap_content"
+				 android:textColor="@color/form_green"
+				 android:textStyle="bold">
+	   </TextView>
+
+            <Button
+                android:id="@+id/btnHeaderStatus"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="2dp"
+                android:textColor="@color/black"
+                android:background="@drawable/textbox_scrolldown" />
+            
+	    </LinearLayout>
+	    
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <TextView android:id="@+id/lblStatusLable"
+                android:text="Customer Status"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/form_green"
+                android:textStyle="bold"/>
+            
+            <Button android:id="@+id/btnStatus"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_operational"
+                />
+        </LinearLayout>
+        
+         <LinearLayout
+        android:id="@+id/relLayoutHeaderProcess"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+       android:gravity="right"
+        android:orientation="vertical" >
+      			 <Button
+                android:id="@+id/btnHeaderProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_process"
+                android:visibility="invisible">
+                </Button>
+       </LinearLayout>
+    </LinearLayout>
+     
+</LinearLayout>

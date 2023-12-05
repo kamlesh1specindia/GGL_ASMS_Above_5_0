@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/table_background"
+    android:layout_gravity="center">
+    <RelativeLayout
+        android:id="@+id/rlpopSignHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="10dp" >
+        <TextView
+            android:id="@+id/lblfeedbackHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_Feedback_sign_Eng"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlpopSignHeader"
+        android:layout_marginBottom="58dp"
+        android:padding = "5dp"
+        android:background="@drawable/my_border_cust_fd" />
+    <RelativeLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true">
+	    <Button
+	        android:id="@+id/popBtngetsign"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:background="@drawable/save_next_button"
+	        android:text="Ok"
+	        android:textSize="20sp" />
+	    <Button
+	        android:id="@+id/popBtnclear"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_toRightOf="@+id/popBtngetsign"
+	        android:background="@drawable/save_next_button"
+	        android:text="Clear"
+	        android:textSize="20sp" />
+      </RelativeLayout>
+</RelativeLayout>

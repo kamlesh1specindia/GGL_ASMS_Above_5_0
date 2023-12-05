@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="customer_status">
+        <item >Open </item>
+        <item >HouseClosed </item>
+        <item >Disconnected</item>
+        <item >Under Construction</item>
+        <item >Refused for Checking</item>
+        <item >Completed</item>
+    </string-array>
+    
+    <string-array name="maintanance_form_list">
+        <item >TESTING</item>
+        <item >CLAMPING</item>
+        <item >PAINTING &amp; O RING</item>        
+        <item >R.C.C</item>
+        <item >KITCHEN SURAKSHA TUBE</item>
+         <item >OTHER SURAKSHA TUBE</item>
+        <item >GEYSER &amp; MAKE </item>
+        <item >OTHER CHECKS</item>
+        <item >CONFORMANCE</item>
+        <item >CUSTOMER</item>
+    </string-array>
+    
+<!--     <string-array name="settings_form_list"> -->
+<!--         <item >Change Language</item> -->
+<!--         <item >Change Password</item> -->
+<!--         <item >Submit Data</item>         -->
+<!--     </string-array> -->
+
+   <string-array name="settings_form_list">
+        <item >Change Language</item>
+        <item >Submit Data</item>
+        <item >Details</item>
+        <item>View Log</item>    
+        <item>Customer Status Help</item>    
+   </string-array>
+    
+	<!-- value for dialog -->
+	<string-array name="arrayCheckBoolean">
+			<item>YES</item>
+			<item>NO</item>
+	</string-array>
+	
+	
+	
+	<!-- Gas Leakage Test pass : check box list value -->
+	
+	<string-array name="array_gas_leakage_checkbox_list">
+			<item >Brass Ball Cock -8100364</item>
+			<item >Customer Appliacne</item>
+			<item >GI Fitting</item>
+			<item >Elbow</item>
+			<item >Tee</item>
+			<item >Hex Nipple</item>
+			<item >Union</item>
+			<item >Plug</item>
+			<item >GI Cap</item>
+			<item >GI Coupling</item>
+			<item >GI Pipe</item>
+			<item >Hose Clamp</item>
+			<item >Isolation Valve</item>
+			<item >Meter</item>
+			<item >Regulator</item>
+			<item >Rubber Cap</item>
+			<item >Suraksha Hose</item>
+			<item >Others</item>
+	</string-array>
+    	
+    <string-array name="safetyTips">
+        <item >kayR krtI vqte pI pI { pherva j½rI 0e.</item>
+        <item >Kam x½ krta phela 3ul bo9 3ok krvu j½rI 0e. </item>
+        <item >HezaDR Ane inyrmIs na rIpo3R krva j½rI 0e. </item>
+        <item >ges knekxn ma> lIkej nI tpas krtI vqte me{n vaLv b>2 krvo j½rI 0e. </item>
+        <item >Jo menomI3rma>  Í/exr 63e to sabuna> pa`I4I lIkej cek krvu j½rI 0e. </item>
+        <item >Ka3 lagel kleMp bdlva j½rI 0e.</item>
+        <item >sur9a ¦ubne lgaVya p0I b>ne 0eDane  sabuna> pa`I4I cek krva j½rI 0e.</item>
+        <item >Je po{N3 vpraxma> n hoy tene rbr kep lgavvI j½rI 0e.</item>
+        <item >mI3r prfomR>Ns 3eS3 krvo j½rI 0e.</item>
+        <item >gIzr ma> sur9a ¦ub bdltI vqte savcetI raqvI j½rI 0e.</item>
+   </string-array>
+   <string-array name="geyerInside">
+        <item >YES</item>
+        <item >NO</item>
+    </string-array>
+   <string-array name="other_mtr_values">
+       <item >OK</item>
+       <item >NOT OK</item>
+   </string-array>
+	
+    </resources>

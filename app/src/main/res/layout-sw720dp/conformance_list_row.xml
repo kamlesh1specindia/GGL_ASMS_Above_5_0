@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/llCnfrList"
+        android:layout_width="320dp"
+        android:layout_height="45dp"        
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/lblCfmReason"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/dash"
+           >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivmiddlepanel"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@+id/llCnfrList"
+        android:background="@drawable/table_partition_vertical" />
+
+    <LinearLayout
+        android:id="@+id/llrightpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"                      
+        android:layout_toRightOf="@+id/ivmiddlepanel"
+        android:orientation="vertical" >
+
+
+    <CheckBox
+        android:id="@+id/chkCfmReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="28dp"    
+        android:layout_marginRight="28dp"  
+        android:button="@drawable/custome_checkbox_selector" />
+</LinearLayout>
+<LinearLayout
+        android:id="@+id/llrightDamage"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"        
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/llrightpanel"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+	       <TextView
+	       android:id="@+id/lblDamageName"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:gravity="left"
+	       android:textColor="@color/form_blue" >
+	       </TextView>
+        </LinearLayout>
+    
+    
+</RelativeLayout>

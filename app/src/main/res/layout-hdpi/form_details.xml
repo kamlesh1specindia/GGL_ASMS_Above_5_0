@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/table_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_settings_details"
+            android:textSize="18sp"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llleftpanel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlaLayoutDetails"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lbldetailContractor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right|center"
+                android:text="@string/title_detail_contractor_Eng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lbldetailTeam"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right|center"
+                android:text="@string/title_detail_team_Eng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lbldetailTechnician"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right|center"
+                android:text="@string/title_detail_technician_Eng"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivmiddlepanel"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llleftpanel"
+        android:layout_below="@+id/rlaLayoutDetails"
+        android:layout_toRightOf="@+id/llleftpanel"
+        android:background="@drawable/table_partition_vertical" />
+
+    <LinearLayout
+        android:id="@+id/llrightpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlaLayoutDetails"
+        android:layout_toRightOf="@+id/ivmiddlepanel"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingTop="3dp" >
+
+            <TextView
+                android:id="@+id/lblSugdetailCortactor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left|center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblSugdetailTeam"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="left|center"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <ListView
+                android:id="@+id/lvUsers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/cachehint"
+                android:clickable="false"
+                android:divider="@drawable/line1"
+                android:dividerHeight="3dp"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:footerDividersEnabled="true"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+		        android:id="@+id/rlaLayoutSyncDataSub"
+		        android:layout_width="fill_parent"
+		        android:layout_height="45dp"
+		        android:background="@drawable/banner_clamping"
+		        android:paddingLeft="20dp"
+		        android:layout_marginTop="3dp"
+		        android:layout_below="@+id/llleftpanel"
+		        android:layout_margin="0dp" >
+				        <TextView
+					        android:id="@+id/lblDataSubmission"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:layout_centerVertical="true"            
+					        android:textSize="20sp"
+					        android:textStyle="bold" 
+					        android:text="@string/header_setting_details_summary"
+				        	android:textAppearance="?android:attr/textAppearanceLarge" />
+   		  </RelativeLayout>
+	       <LinearLayout
+		        android:id="@+id/rlaLayoutSyncDataSubSummaryLeft"
+		        android:layout_width="180dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/rlaLayoutSyncDataSub"
+		        android:orientation="vertical"
+		        android:layout_marginLeft="0dp">
+
+			<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="0dp" >
+			                
+			   		        <TextView
+						        android:id="@+id/lblFileName"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_gravity="right"
+						        android:textSize="16sp"
+						        android:paddingTop="15dp"
+						        android:textColor="@color/black"
+						        android:text="@string/title_detail_fileName_Eng"/>
+			   		</LinearLayout>
+	   		        
+			        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+		   		          <TextView
+					        android:id="@+id/lblInstallOn"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_gravity="right"
+					        android:textSize="16sp"
+					        android:textColor="@color/black"
+					        android:paddingTop="15dp"
+					        android:text="@string/title_detail_fileInsatll_Eng"/>
+	   		       </LinearLayout>
+	   		      
+		</LinearLayout>
+		
+		<ImageView
+        android:id="@+id/ivmiddlepanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rlaLayoutSyncDataSubSummaryLeft"
+        android:layout_below="@+id/rlaLayoutSyncDataSub"
+        android:layout_toRightOf="@+id/rlaLayoutSyncDataSubSummaryLeft"
+        android:background="@drawable/table_partition_vertical" />
+		
+         <LinearLayout
+		        android:id="@+id/rlaLayoutSyncDataSubSummaryRight"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/rlaLayoutSyncDataSub"
+		        android:layout_toRightOf="@+id/ivmiddlepanel"
+		        android:orientation="vertical"
+		        android:layout_marginRight="0dp">	
+		        
+             		<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		             <TextView
+					        android:id="@+id/txtFileName"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:textSize="14sp"
+					        android:paddingTop="15dp"
+					        android:singleLine="false"
+					        android:textColor="@color/black"
+					        android:text="0"/>
+             		</LinearLayout>
+             		
+             		<LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="45dp"
+		            android:background="@drawable/table_partition_horizontal"
+		            android:orientation="vertical"
+		            android:paddingRight="10dp"
+		            android:paddingTop="5dp" >
+	   		            <TextView
+					        android:id="@+id/txtInstallOn"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_alignParentLeft="true"
+					        android:textSize="14sp"
+					        android:singleLine="false"
+					        android:textColor="@color/black"
+					        android:paddingTop="15dp"
+					        android:text="0"/>
+             		 </LinearLayout>
+          </LinearLayout>	
+    
+</RelativeLayout>

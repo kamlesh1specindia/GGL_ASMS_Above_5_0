@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "67500032379",
+    "firebase_url": "https://gujarat-gas-2df30.firebaseio.com",
+    "project_id": "gujarat-gas-2df30",
+    "storage_bucket": "gujarat-gas-2df30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67500032379:android:d21bcaef08c116da",
+        "android_client_info": {
+          "package_name": "com.spec.asms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67500032379-m7i46digk7nl4bg3jn4qnffbvru8gb4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWYKsoMe3X2hx-GqfNgReF4uTl0YlFGj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67500032379-m7i46digk7nl4bg3jn4qnffbvru8gb4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

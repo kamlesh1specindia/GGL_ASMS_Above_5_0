@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp" >
+    
+  <RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutSurkshTube"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/lblSurakshaTubeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_other_suraksha_tube_Eng"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llleftpanel"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlaLayoutSurkshTube"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical" >
+        
+        <!-- <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/lblExpiryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/title_expiry_date_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/lblsurakshaTubeReplaced"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="@string/title_surakshaTube_Replaced_Eng"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+       
+
+        <LinearLayout
+            android:id="@+id/llSurkshaTube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+            
+             
+           <!--  <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" 
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/lblExpiryReplacedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_expiry_date_of_replaced_rubber_tube_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout> -->
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" 
+                android:paddingBottom="5dp"></LinearLayout>
+            
+              <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                <TextView
+		                    android:id="@+id/lblSurakshaTube75mm1Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="right"
+		                    android:gravity="right"
+		                    android:text="@string/title_surakshaTube_79mm_1_meter_Eng"
+		                    android:textColor="@color/black"
+		                    android:textSize="14sp" />
+		            </LinearLayout>
+
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                <TextView
+		                    android:id="@+id/lblSurakshaTube79mm15Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="right"
+		                    android:gravity="right"
+		                    android:text="@string/title_surakshaTube_79mm_15_Meter_Eng"
+		                    android:textColor="@color/black"
+		                    android:textSize="14sp" />
+		            </LinearLayout>
+		            
+		      <!--       <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                <TextView
+		                    android:id="@+id/lblSurakshaTube12.5mm1Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="right"
+		                    android:gravity="right"
+		                    android:text="@string/title_surakshaTube_12.5mm_1_Meter_Eng"
+		                    android:textColor="@color/black"
+		                    android:textSize="14sp" />
+		            </LinearLayout> -->
+
+		            <LinearLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                <TextView
+		                    android:id="@+id/lblSurakshaTube125mm15Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="right"
+		                    android:gravity="right"
+		                    android:text="@string/title_surakshaTube_125mm_15_Meter_Eng"
+		                    android:textColor="@color/black"
+		                    android:textSize="14sp" />
+		            </LinearLayout>
+		         
+		         
+            
+             <!-- <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblSurakshaTube69mm_1meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_surakshaTube_6.9mm_1_Meter_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout> -->
+            
+             
+            <!--   <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblSurakshaTube69mm_15meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_surakshaTube_6.9mm_1.5_Meter_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout> -->
+             
+              
+              <!--  <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblSurakshaTubeHouse_Clamp8mm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_surakshaTube_house_clamp_8mm_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout> -->
+              </LinearLayout>
+              
+          <LinearLayout android:id="@+id/lnHeader2" 
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" 
+                android:visibility="visible"
+                android:paddingBottom="5dp">
+              
+          </LinearLayout>
+          
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblSurakshaTubeClampHose8mmPipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_surakshaTube_ClampHose_8mm_Pipe_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/lblSurakshaTubeClampHose20mmpipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="@string/title_surakshaTube_ClampHose_20mm_pipe_Eng"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivmiddlepanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llleftpanel"
+        android:layout_below="@+id/rlaLayoutSurkshTube"
+        android:layout_toRightOf="@+id/llleftpanel"
+        android:background="@drawable/table_partition_vertical" />
+
+    <LinearLayout
+        android:id="@+id/llrightpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlaLayoutSurkshTube"
+        android:layout_toRightOf="@+id/ivmiddlepanel"
+        android:orientation="vertical" >
+        
+                <!-- <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+
+                    <TextView android:id="@+id/txtExpiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:text="032016"/>
+                    
+                    <ImageButton
+                        android:id="@+id/imgBtnExpiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/txtExpiryDate"
+                        android:background="@drawable/icon_callendar" />
+
+                    <TextView
+                        android:id="@+id/errExpiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/imgBtnExpiryDate"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout> -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/table_partition_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSurakshaTubeReplaced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textbox_scrolldown"
+                android:paddingLeft="2dp"
+                android:paddingRight="27dp"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radGroupSurakshaTubeReplaced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnSurakshaTubeReplaced"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radBtnYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lable_yes"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radBtnNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lable_no"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" >
+                </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/errSurakshaTubeReplaced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/radGroupSurakshaTubeReplaced"
+                android:maxLines="2"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        
+
+                
+             
+        
+
+        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:id="@+id/llSurkshaTubeDetail"
+	            android:visibility="visible">
+            
+            
+           <!--  <RelativeLayout android:layout_width="wrap_content"
+                             android:layout_height="40dp"
+                             android:layout_centerVertical="true"
+                             android:background="@drawable/table_partition_horizontal"
+                             android:gravity="center_vertical">
+                    
+                      <TextView android:id="@+id/txtRelpacedExpiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:text="032016"/>
+                      
+                      <ImageButton
+                        android:id="@+id/imgBtnReplacedExpiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/txtRelpacedExpiryDate"
+                        android:background="@drawable/icon_callendar" />
+                        
+                     <TextView
+                        android:id="@+id/errReplacedExpiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toRightOf="@id/imgBtnReplacedExpiryDate"
+                        android:maxLines="2"
+                        android:textColor="@color/form_blue"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                 -->
+            
+            <RelativeLayout android:layout_width="wrap_content"
+                         android:layout_height="45dp"
+                         android:background="@drawable/table_partition_horizontal"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+                         <TextView android:id="@+id/txtVendorSupplied" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="center"
+                			 android:text="Vendor\nSupplied"/>
+                         <TextView android:id="@+id/txtCompanySupplied" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtVendorSupplied"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="center"
+                			 android:text="Company\nSupplied"/>
+
+                         <TextView android:id="@+id/txtNoChargableQty" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtCompanySupplied"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="left"
+                			 android:text="Non Chargeble\nQuantity"/>
+                         <TextView android:id="@+id/txtChargableQty" 
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_toRightOf="@+id/txtNoChargableQty"
+                             android:textColor="@color/black"
+                			 android:textSize="13sp"
+                			 android:layout_marginLeft="12dp"
+                			 android:gravity="left"
+                			 android:text="Chargeble\nQuantity"/>
+                     </RelativeLayout>
+		            <RelativeLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                 <RadioGroup
+		                      android:id="@+id/radGroupSurakshaTube75mm1Meter"
+		                      android:layout_width="wrap_content"
+		                      android:layout_height="wrap_content"
+		                      android:orientation="horizontal" >
+
+		                      <RadioButton
+		                          android:id="@+id/radStube75ByVendor"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="20dp"
+		                          android:layout_marginRight="20dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+		                     
+		                      <RadioButton
+		                          android:id="@+id/radStube75ByCompany"
+		                          android:layout_width="wrap_content"
+		                          android:layout_height="wrap_content"
+		                          android:layout_marginLeft="10dp"
+		                          android:textColor="@color/black"
+		                          android:textSize="14sp" >
+		                      </RadioButton>
+
+		                     
+		                  </RadioGroup>
+		                  
+		                <EditText
+		                    android:id="@+id/edtSurakshaTube75mm1Meter"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:layout_toRightOf="@+id/radGroupSurakshaTube75mm1Meter"
+		                    android:layout_marginLeft="30dp"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" />
+		                
+		                
+		                 <EditText
+		                    android:id="@+id/edtSurakshaTube75mm1MeterChargeable"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:layout_toRightOf="@id/edtSurakshaTube75mm1Meter"
+		                    android:layout_marginLeft="10dp"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" />
+		                 
+		                 
+		
+		                <TextView
+		                    android:id="@+id/errSurakshaTube75mm1Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerVertical="true"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_marginRight="5dp"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube75mm1MeterChargeable"
+		                    android:maxLines="2"
+		                    android:textColor="@color/form_blue"
+		                    android:text="Value should be less than 16."
+		                	android:textStyle="bold"
+		                    android:textSize="13sp" />
+		            </RelativeLayout>
+
+		            <RelativeLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                  <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTube79mm15Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="horizontal" >
+
+		                   <RadioButton
+		                        android:id="@+id/radStube7915ByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                         android:layout_marginLeft="20dp"
+		                        android:layout_marginRight="20dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		                      
+		                    <RadioButton
+		                        android:id="@+id/radStube7915ByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		       
+		                </RadioGroup>
+		                
+		                <EditText
+		                    android:id="@+id/edtSurakshaTube79mm15Meter"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:layout_toRightOf="@+id/radGroupSurakshaTube79mm15Meter"
+		                    android:layout_marginLeft="30dp"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" >
+		                </EditText>
+		                
+		                
+		                <EditText
+		                    android:id="@+id/edtSurakshaTube79mm15MeterChargeable"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:layout_marginLeft="10dp"
+		                    android:layout_toRightOf="@id/edtSurakshaTube79mm15Meter"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" >
+		                   
+		                   </EditText>
+		                   
+		              
+		                
+                       <TextView
+		                    android:id="@+id/errSurakshaTube79mm15Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerVertical="true"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_marginRight="5dp"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube79mm15MeterChargeable"
+		                    android:maxLines="2"
+		                    android:textColor="@color/form_blue"
+		                	android:textStyle="bold"
+		                	 android:text="Value should be less than 16."
+		                    android:textSize="13sp" />
+		            </RelativeLayout>
+		            
+		          <!--   <RelativeLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                <EditText
+		                    android:id="@+id/edtSurakshaTube12.5mm1Meter"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" >
+		                </EditText>
+		                
+		                
+		                <EditText
+		                    android:id="@+id/edtSurakshaTube12.5mm1MeterNonChargeable"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:layout_marginLeft="10dp"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube12.5mm1Meter"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" >
+		                </EditText>
+		                
+		                 <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTube12.5mm1Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube12.5mm1MeterNonChargeable"
+		                    android:orientation="horizontal" >
+
+		                    <RadioButton
+		                        android:id="@+id/radStube1251ByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/lbl_by_company"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		                    <RadioButton
+		                        android:id="@+id/radStube1251ByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:text="@string/lbl_by_vendor"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		                </RadioGroup>
+		
+		                <TextView
+		                    android:id="@+id/errSurakshaTube12.5mm1Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerVertical="true"
+		                    android:layout_marginLeft="15dp"
+		                    android:layout_marginRight="5dp"
+		                    android:layout_toRightOf="@id/radGroupSurakshaTube12.5mm1Meter"
+		                    android:maxLines="2"
+		                    android:textColor="@color/form_blue"
+		                	android:textStyle="bold"
+		                	android:text="Value should be less than 16."
+		                    android:textSize="14sp" />
+		            </RelativeLayout> -->
+
+		            <RelativeLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="45dp"
+		                android:background="@drawable/table_partition_horizontal"
+		                android:orientation="vertical"
+		                android:paddingRight="10dp"
+		                android:paddingTop="5dp" >
+		
+		                 <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTube125mm15Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="horizontal" >
+
+		                    <RadioButton
+		                        android:id="@+id/radSTube12515ByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="20dp"
+		                        android:layout_marginRight="20dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		                    
+		                    <RadioButton
+		                        android:id="@+id/radSTube12515ByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		                 
+		                </RadioGroup>
+		                
+		                <EditText
+		                    android:id="@+id/edtSurakshaTube125mm15Meter"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:ems="10"
+		                    android:layout_toRightOf="@+id/radGroupSurakshaTube125mm15Meter"
+		                    android:layout_marginLeft="30dp"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" >
+		                </EditText>
+		                
+		                <EditText
+		                    android:id="@+id/edtSurakshaTube125mm15MeterChargeable"
+		                    android:layout_width="100dp"
+		                    android:layout_height="wrap_content"
+		                    android:layout_gravity="center_vertical"
+		                    android:background="@drawable/textbox"
+		                    android:layout_marginLeft="10dp"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube125mm15Meter"
+		                    android:ems="10"
+		                    android:enabled="true"
+		                    android:imeOptions="actionNext"
+		                    android:inputType="number"
+		                    android:maxLength="3"
+		                    android:paddingLeft="2dp"
+		                    android:paddingRight="27dp" >
+		                </EditText>
+		                
+		              
+		
+		                <TextView
+		                    android:id="@+id/errSurakshaTube125mm15Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_centerVertical="true"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_marginRight="5dp"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube125mm15MeterChargeable"
+		                    android:maxLines="2"
+		                    android:textColor="@color/form_blue"
+		                	android:textStyle="bold"
+		                	 android:text="Value should be less than 16."
+		                    android:textSize="13sp" />
+		                
+		            </RelativeLayout>
+		       
+
+            <!-- <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtSurakshaTube6.9mm1Meter"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+                
+                 <EditText
+                    android:id="@+id/edtSurakshaTube6.9mm1MeterNonChargeable"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/edtSurakshaTube6.9mm1Meter"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+                
+                 <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTube6.9mm1Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube6.9mm1MeterNonChargeable"
+		                    android:orientation="horizontal" >
+
+		                    <RadioButton
+		                        android:id="@+id/radSTube691ByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/lbl_by_company"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		                    <RadioButton
+		                        android:id="@+id/radSTube691ByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:text="@string/lbl_by_vendor"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		        </RadioGroup>
+
+                <TextView
+                    android:id="@+id/errSurakshaTube6.9mm1Meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/radGroupSurakshaTube6.9mm1Meter"
+                    android:maxLines="2"
+                    android:textColor="@color/form_blue"
+                	android:textStyle="bold"
+                	 android:text="Value should be less than 16."
+                    android:textSize="14sp" />
+            </RelativeLayout> -->
+
+            <!-- <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtSurakshaTube6.9mm15Meter"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                
+                  <EditText
+                    android:id="@+id/edtSurakshaTube6.9mm15MeterNonChargeable"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:layout_toRightOf="@+id/edtSurakshaTube6.9mm15Meter"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+                
+                  <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTube6.9mm15Meter"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toRightOf="@+id/edtSurakshaTube6.9mm15MeterNonChargeable"
+		                    android:orientation="horizontal" >
+
+		                    <RadioButton
+		                        android:id="@+id/radSTube6915ByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/lbl_by_company"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		                    <RadioButton
+		                        android:id="@+id/radSTube6915ByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:text="@string/lbl_by_vendor"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		        </RadioGroup>
+                
+                <TextView
+                    android:id="@+id/errSurakshaTube6.9mm15Meter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/radGroupSurakshaTube6.9mm15Meter"
+                    android:maxLines="2"
+                    android:textColor="@color/form_blue"
+                	android:textStyle="bold"
+                	 android:text="Value should be less than 16."
+                    android:textSize="14sp" />
+            </RelativeLayout>
+ -->            
+           <!--  <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <EditText
+                    android:id="@+id/edtSurakshaTubeHoseClamp8mmTube"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                
+                  <EditText
+                    android:id="@+id/edtSurakshaTubeHoseClamp8mmTubeNonChargeable"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:layout_toRightOf="@+id/edtSurakshaTubeHoseClamp8mmTube"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+                
+                  <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTubeHoseClamp8mmTube"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_toRightOf="@+id/edtSurakshaTubeHoseClamp8mmTubeNonChargeable"
+		                    android:orientation="horizontal" >
+
+		                    <RadioButton
+		                        android:id="@+id/radSTubeHoseClamp88mmTubeByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="@string/lbl_by_company"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		                    <RadioButton
+		                        android:id="@+id/radSTubeHoseClamp88mmTubeByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:text="@string/lbl_by_vendor"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		        </RadioGroup>
+                
+                <TextView
+                    android:id="@+id/errSurakshaTubeHoseClamp8mmTube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/radGroupSurakshaTubeHoseClamp8mmTube"
+                    android:maxLines="2"
+                    android:textColor="@color/form_blue"
+                	android:textStyle="bold"
+                	 android:text="Value should be less than 16."
+                    android:textSize="14sp" />
+               </RelativeLayout> -->
+               
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:id="@+id/rltHeader2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txtVendorSupplied2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="Vendor\nSupplied"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtCompanySupplied2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/txtVendorSupplied2"
+                    android:gravity="center"
+                    android:text="Company\nSupplied"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtNoChargableQty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/txtCompanySupplied2"
+                    android:gravity="left"
+                    android:text="Non Chargeble\nQuantity"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtChargableQty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/txtNoChargableQty2"
+                    android:gravity="left"
+                    android:text="Chargeble\nQuantity"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+                     
+             <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                  
+                     
+                  <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTubeClampHose8mmPipe"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="horizontal" >
+
+                           <RadioButton
+		                        android:id="@+id/radHose8mmPipeByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="20dp"
+		                        android:layout_marginRight="20dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		                    
+		                    <RadioButton
+		                        android:id="@+id/radHose8mmPipeByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		                    
+		        </RadioGroup>
+		        
+                <EditText
+                    android:id="@+id/edtSurakshaTubeClampHose8mmPipe"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:layout_toRightOf="@+id/radGroupSurakshaTubeClampHose8mmPipe"
+                    android:layout_marginLeft="30dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                
+                  <EditText
+                    android:id="@+id/edtSurakshaTubeClampHose8mmPipeChargeable"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:layout_toRightOf="@+id/edtSurakshaTubeClampHose8mmPipe"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+                
+                  
+                
+                <TextView
+                    android:id="@+id/errSurakshaTubeClampHose8mmPipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/edtSurakshaTubeClampHose8mmPipeChargeable"
+                    android:maxLines="2"
+                    android:textColor="@color/form_blue"
+                	android:textStyle="bold"
+                	 android:text="Value should be less than 16."
+                    android:textSize="13sp" />
+            </RelativeLayout>
+            
+              <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/table_partition_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                   <RadioGroup
+		                    android:id="@+id/radGroupSurakshaTube20mmReplaced"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="horizontal" >
+
+                           <RadioButton
+		                        android:id="@+id/radHose20mmPipeByVendor"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="20dp"
+		                        android:layout_marginRight="20dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+		                    
+		                    <RadioButton
+		                        android:id="@+id/radHose20mmPipeByCompany"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_marginLeft="10dp"
+		                        android:textColor="@color/black"
+		                        android:textSize="14sp" >
+		                    </RadioButton>
+
+		                   
+		        </RadioGroup>
+                
+                   
+                <EditText
+                    android:id="@+id/edtSurakshaTubeClampHose20mmPipe"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:ems="10"
+                    android:layout_toRightOf="@+id/radGroupSurakshaTube20mmReplaced"
+                    android:layout_marginLeft="30dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+
+                
+                  <EditText
+                    android:id="@+id/edtSurakshaTubeClampHose20mmPipeChargeable"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textbox"
+                    android:layout_toRightOf="@+id/edtSurakshaTubeClampHose20mmPipe"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="27dp" >
+                </EditText>
+                
+                  
+                  
+                <TextView
+                    android:id="@+id/errSurakshaTubeClampHose20mmPipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/edtSurakshaTubeClampHose20mmPipeChargeable"
+                    android:maxLines="2"
+                    android:textColor="@color/form_blue"
+                	android:textStyle="bold"
+                	 android:text="Value should be less than 16."
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSurakshaSaveandNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/llrightpanel"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/save_next_button"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/btnSurakshaPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llrightpanel"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/btnSurakshaSaveandNext"
+        android:background="@drawable/save_next_button"
+        android:text="Previous" />
+
+    <TextView
+        android:id="@+id/errmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSurakshaPrev"
+        android:layout_alignBottom="@+id/btnSurakshaPrev"
+        android:layout_alignLeft="@+id/llleftpanel"
+        android:layout_marginLeft="10dp"
+        android:maxLines="2"
+        android:text="@string/errro_manditory_message_Eng"
+        android:textColor="@color/red"
+        android:textSize="13sp" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/table_background"
+    android:orientation="vertical"
+    android:padding="2.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutSync"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="20.0dip" >
+
+        <TextView
+            android:id="@+id/lblSync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_settings_sync"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="18.0dip" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSync"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlaLayoutSync"
+        android:layout_margin="20.0dip"
+        android:text="@string/synchro_text_Eng"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="18.0dip" />
+
+    <Button
+        android:id="@+id/btnSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSync"
+        android:layout_margin="20.0dip"
+        android:background="@drawable/save_next_button"
+        android:focusable="false"
+        android:padding="5.0dip"
+        android:text="Submit"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="18.0dip" />
+
+    <Button
+        android:id="@+id/btnAutoSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSync"
+        android:layout_margin="20.0dip"
+        android:background="@drawable/icon_process"
+        android:focusable="false"
+        android:padding="5.0dip"
+        android:textSize="18.0sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtAutoSubMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnAutoSub"
+        android:layout_below="@id/btnSync"
+        android:layout_marginLeft="20.0dip"
+        android:layout_toRightOf="@id/btnAutoSub"
+        android:padding="5.0dip"
+        android:text="@string/sync_auto_submssion_Eng"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/red"
+        android:textSize="18.0sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rlaLayoutSyncDataSub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAutoSub"
+        android:background="@drawable/banner_clamping"
+        android:paddingLeft="20.0dip" >
+
+        <TextView
+            android:id="@+id/lblDataSubmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/header_setting_sync_summary"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rlaLayoutSyncDataSub" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlaLayoutSyncDataSub" >
+
+            <LinearLayout
+                android:id="@+id/rlaLayoutSyncDataSubSummaryLeft"
+                android:layout_width="450.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="0.0dip" >
+
+                    <TextView
+                        android:id="@+id/lblLstSubDt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/sync_auto_submssion_lstdt_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/lblTotRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/sync_auto_submssion_totrec_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/lblSuccRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/sync_auto_submssion_sucessrec_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/lblUnsuccRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/sync_auto_submssion_unsucessrec_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/lblTotalCompletedRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/sync_auto_submssion_total_record_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/lblTotalSyncRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingTop="15.0dip"
+                        android:text="@string/sync_auto_submssion_total_sync_Eng"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivmiddlepanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/rlaLayoutSyncDataSubSummaryLeft"
+                android:layout_below="@id/rlaLayoutSyncDataSub"
+                android:layout_toRightOf="@id/rlaLayoutSyncDataSubSummaryLeft"
+                android:background="@drawable/table_partition_vertical" />
+
+            <LinearLayout
+                android:id="@+id/rlaLayoutSyncDataSubSummaryRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rlaLayoutSyncDataSub"
+                android:layout_marginRight="0.0dip"
+                android:layout_toRightOf="@id/ivmiddlepanel"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/txtLstSubDt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="15.0dip"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/txtTotRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/txtLstSubDt"
+                        android:paddingTop="15.0dip"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/txtSuccRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/txtTotRec"
+                        android:paddingTop="15.0dip"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/txtUnsuccRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/txtSuccRec"
+                        android:paddingTop="15.0dip"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/txtTotalCompletedRecords"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/txtUnsuccRec"
+                        android:paddingTop="15.0dip"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45.0dip"
+                    android:background="@drawable/table_partition_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/txtTotalSyncRecord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/txtTotalCompletedRecords"
+                        android:paddingTop="15.0dip"
+                        android:textColor="@color/black"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

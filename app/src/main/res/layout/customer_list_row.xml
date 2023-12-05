@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+     <ImageView 
+	          android:id="@+id/View0"
+	          android:layout_width="2dp"
+	          android:layout_height="80dp"
+	          android:background="@drawable/table_seperator_vertical">
+     </ImageView>
+	
+	  <TextView  
+			android:id="@+id/lblCustomerId"
+		    android:layout_width="160dp" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="20sp"
+		    android:paddingLeft="5dp"
+		    android:layout_centerInParent="true"
+		    android:layout_toRightOf="@+id/View0"
+		    android:textColor="@color/black"
+		    android:clickable="false">	
+	  </TextView>
+	
+	 <ImageView 
+	         android:id="@+id/View01"
+	         android:layout_width="2dp"
+	         android:layout_height="80dp"
+	         android:layout_toRightOf="@+id/lblCustomerId"
+	         android:background="@drawable/table_seperator_vertical" >
+     </ImageView>
+     
+	 <RelativeLayout android:id="@+id/rltCustomerName"
+	        android:layout_width="338dp"
+		    android:layout_height="wrap_content" 
+		    android:layout_marginLeft="10dp"
+		    android:layout_centerInParent="true"
+		    android:layout_toRightOf="@+id/View01">
+	     
+	     <TextView  
+			android:id="@+id/lblCustomerName"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="20sp"
+		    android:textColor="@color/form_blue">
+		    </TextView>
+		    
+	      <RelativeLayout android:id="@+id/rltCall"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/lblCustomerName"
+	         android:layout_marginTop="15dp">
+	          
+	         <ImageView 
+	          android:id="@+id/imgStatus"
+	          android:layout_alignParentLeft="true"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content" >
+	         </ImageView> 
+	          
+	         <ImageView 
+	          android:id="@+id/imgCallIcon"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_toLeftOf="@+id/lblContactNumber"
+	          android:background="@drawable/icn_call" >
+	         </ImageView> 
+	         
+	      <TextView  
+			android:id="@+id/lblContactNumber"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:textSize="20sp"
+		    android:layout_marginLeft="5dp"
+		    android:textColor="@color/form_blue">
+		    </TextView>
+		    
+	         </RelativeLayout> 
+	 
+	 </RelativeLayout>
+	 
+	  
+	<!--  <TextView  
+			android:id="@+id/lblCustomerName"
+		    android:layout_width="338dp" 
+		    android:layout_height="wrap_content" 
+		    android:layout_toRightOf="@+id/View01"
+		    android:layout_marginLeft="10dp"
+		    android:layout_centerInParent="true"
+		    android:textSize="20sp"
+		    android:textColor="@color/form_blue">
+	</TextView> -->
+	 
+	 <ImageView 
+	          android:id="@+id/View02"
+	          android:layout_width="2dp"
+	          android:layout_height="80dp"
+	          android:layout_toRightOf="@+id/rltCustomerName"
+	          android:background="@drawable/table_seperator_vertical" >
+     </ImageView>
+	    
+	  <TextView  
+			android:id="@+id/lblCustomerAdd"
+		    android:layout_width="545dp" 
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/View02" 
+		    android:textSize="20sp"
+		    android:layout_centerInParent="true"
+		    android:clickable="false"
+		    android:textColor="@color/black">
+	   </TextView>
+	  
+	  <ImageView 
+	          android:id="@+id/View03"
+	          android:layout_width="2dp"
+	          android:layout_height="80dp"
+	          android:layout_toRightOf="@+id/lblCustomerAdd"
+	          android:background="@drawable/table_seperator_vertical" >
+     </ImageView>
+	  
+	  <ImageView 
+				android:id="@+id/imgCustomerWalkseqUp"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="30dp"
+			    android:layout_toRightOf="@+id/View03" 
+			    android:background="@drawable/arrow_walksequence_up" 
+			    android:layout_centerInParent="true">
+	</ImageView>
+	  
+	   <ImageView 
+	          android:id="@+id/View04"
+	          android:layout_width="2dp"
+	          android:layout_height="80dp"
+	          android:layout_marginLeft="30dp"
+	          android:layout_toRightOf="@+id/imgCustomerWalkseqUp"
+	          android:background="@drawable/table_seperator_vertical" >
+      </ImageView>
+     
+	   <ImageView 
+			android:id="@+id/imgCustomerWalkseqDown"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dp"
+		    android:layout_toRightOf="@+id/View04" 
+		    android:background="@drawable/arrow_walksequence_down"
+		    android:layout_centerInParent="true">
+	  </ImageView>
+</RelativeLayout>

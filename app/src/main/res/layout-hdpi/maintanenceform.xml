@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/form_background_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5" >
+
+            <ListView
+                android:id="@+id/listMntnceForm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/cachehint"
+                android:divider="@drawable/line1"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/light_blue" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.16"
+            android:background="@drawable/leftpannel_partion" >
+        
+            </LinearLayout>        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.2"            
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical" >
+            
+                <include
+                    android:id="@+id/form_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    layout="@layout/form_header" >
+                </include>
+
+            <FrameLayout
+                android:id="@+id/frmLayoutFragment"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="7dp"                
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

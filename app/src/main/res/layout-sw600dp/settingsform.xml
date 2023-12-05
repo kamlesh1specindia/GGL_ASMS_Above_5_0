@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/form_background_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="10.0" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5" >
+
+            <ListView
+                android:id="@+id/listMntnceForm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/cachehint"
+                android:divider="@drawable/line1"
+                android:dividerHeight="2.0dip"
+                android:listSelector="@color/light_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.16"
+            android:background="@drawable/leftpannel_partion" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="7.2"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip"
+            android:paddingRight="5.0dip" >
+
+            <FrameLayout
+                android:id="@+id/frmLayoutFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginTop="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
